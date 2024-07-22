@@ -524,3 +524,64 @@ button.r_m_btn {
     padding-top: 80px;
     background-color: #f3f6f8;
 }
+.offer_service_container{
+    background-image: url(../images_hvacwebpages/services_image.jpg);
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size:100% 110%;
+    padding-top: 70px;
+}
+.offer_content1_box {
+    display: flex;
+}
+.offer_box {
+    display: flex;
+}
+.offer_content1_box {
+    display: flex;
+    align-items: center;
+    color: #201e25;
+    margin: 0;
+    line-height: 1.3;
+    font-size: 20px;
+}
+.offer_content1 {
+    width: 80%;
+}
+.outer_offer_container {
+    position: relative;
+}
+.offer_box {
+    display: flex;
+    padding: 60px;
+}
+.offer_box_container {
+    position: absolute;
+    top: 310px;
+    left: 180px;
+
+}
+.offer_content_arrow {
+    color: green;
+}
+.offer_box_container {
+    position: absolute;
+    top: 190px;
+    left: 110px;
+    background-color: white;
+    border: 1px solid #d8dee1;
+    max-width: 740px;
+    height: 301px;
+}
+.offer_heading {
+    font-weight: 700;
+    line-height: 1.3;
+    color: #201e25;
+    font-size: 34px;
+    position: absolute;
+    top: 110px;
+    left: 100px;
+}
