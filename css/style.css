@@ -1003,3 +1003,45 @@ h1.feedback_client {
 .client3 {
     margin-right: 10px;
 }
+.au_info-img {
+    padding: 40px;
+    box-shadow: 0 0 11px #0f2765;
+}
+.au_info-img img {
+    width: 570px;
+    height: 790px;
+}
+.au_info-section {
+    /* margin-left: 120px; */
+    /* margin-right: 70px; */
+    padding: 40px;
+}
+.au_info-img2 {
+    padding: 40px;
+    box-shadow: 0 0 11px #0f2765;
+    margin-left: 120px;
+    margin-right: 70px;
+}
+.au_info-img2 img {
+    width: 570px;
+    height: 610px;
+}
+.au_mission_container {
+    /* width: 50%; */
+    padding-left: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.au_group {
+    box-shadow: 0 0 11px #ababab;
+    display: block;
+    padding: 15px 50px;
+    background: #01014d;
+    color: #fff !important;
+    border-radius: 85px;
+    height: 200px;
+    margin-top: 25px;
+    width: 370px;
+    margin-left: 10px;
+}
