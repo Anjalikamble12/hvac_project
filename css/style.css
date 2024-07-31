@@ -812,15 +812,7 @@ h2.footer_cnt {
 .content-title {
     width: 100%;
 }
-h1.main-tiltle {
-    color: white;
-    width: 100%;
-    background: #0f2765;
-    height: 100px;
-    padding: 70px 0px 0px 0px;
-    text-align: center;
-    margin-top: 0px;
-}
+
 .service_section {
     display: flex;
     width: 100%;
@@ -1140,4 +1132,122 @@ h2.quote_heading {
     line-height: 1.2;
     color: #3a3c92;
     font-size: 28px;
+}
+.blog_inner_container {
+    margin: 0px 150px 0px 150px;
+    padding: 10px;
+}
+.blog_container {
+    display: flex;
+    padding: 45px 15px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+.blog_outer_container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.blog_left_side_container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.blog_right_side_container{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+h3.blog_top_heading {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+p.blog_para {
+    text-align: justify;
+    color: #666;
+    line-height: 26px;
+    text-transform: none;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.blog_left_side_container img {
+    width: 445px;
+    height: 285px;
+}
+.content-title_service {
+    background-image: url(../images_hvacwebpages/sevice_ban.jpg);
+    background-size: cover;
+    object-fit: cover;
+    height: 260px;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+}
+h1.main-tiltle_service {
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.content-title_download{
+    background-image: url(../images_hvacwebpages/downloadBanner.jpg);
+    background-size: cover;
+    object-fit: cover;
+    height: 260px;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+}
+.main-tiltle_download{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.content-title_About{
+    background-image: url(../images_hvacwebpages/banner-about.jpg);
+    background-size: cover;
+    object-fit: cover;
+    height: 260px;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+}
+.main-tiltle_About{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.content-title_contact{
+    background-image: url(../images_hvacwebpages/contactBanner.jpg);
+    background-size: cover;
+    object-fit: cover;
+    height: 260px;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+}
+.main-tiltle_contact{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.content-title_blog{
+    background-image: url(../images_hvacwebpages/blog_image.1jpg.jpg);
+    background-size: cover;
+    object-fit: cover;
+    height: 260px;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+}
+.main-tiltle_blog{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.content-title_career{
+    background-image: url(../images_hvacwebpages/careerBanner.jpg);
+    background-size: cover;
+    object-fit: cover;
+    height: 260px;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+}
+.main-tiltle_career{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
 }
