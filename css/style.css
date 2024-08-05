@@ -53,7 +53,7 @@ i.fa-brands.fa-instagram {
     height: 140px;
 }
 .image-container {
-    width: 25%;
+    width: 20%;
 }
 li.inline-block {
     display: inline-block;
@@ -68,6 +68,10 @@ li.inline-block {
     display: inline-block;
     padding: 10px;
     text-transform: uppercase;
+}
+li.inline-block a {
+    text-decoration: none;
+    color: black;
 }
 .request_btn {
     color: white;
@@ -1250,4 +1254,131 @@ h1.main-tiltle_service {
     color: white;
     text-align: center;
     padding-top: 100px;
+}
+.career_content {
+    display: flex;
+    /* color: blue; */
+    color: #666;
+    line-height: 26px;
+    margin: 0 0 15px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.career_icon_box {
+    color: #2154cf;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 5px;
+}
+h4.career_name {
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 20px;
+}
+h1.carrier_heading {
+    margin-bottom: 15px;
+    color: #666;
+}
+.career_role_name_container:hover{
+    box-shadow: 0 13px 18px 0 #aab1bb;
+    transition: 0.8s;
+    background-color: #aab1bb;
+    padding-left: 30px;
+}
+.career_middle_container {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.career-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+h1 {
+    
+    color: #333;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.carrier_heading {
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0;
+}
+
+.job-description {
+    display: none;
+    padding: 10px;
+    border-top: none;
+    color: #666;
+    line-height: 26px;
+    margin: 0 0 15px;
+    text-transform: none;
+    font-weight: 400;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.job-description-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+h2.heading_discription {
+    color: #333;
+    padding: 20px 0px;
+}
+.job-description-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.job-description-list li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+.job-description-list li::before {
+    content: '▶';
+    color: #008cba;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.desc_name {
+    padding-top: 10px;
+}
+#top_myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 90;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    padding: 7px;
+    height: 50px;
+    width: 50px;
+    color: white;
+    background-color: #01014d;
+}
+#top_myBtn:hover {
+  background-color:  #5a5a31;;
+  ;
 }

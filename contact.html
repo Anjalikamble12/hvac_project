@@ -46,13 +46,14 @@
 </div>
     <div class="navbar_list">
         <ul>
-            <b><li class="inline-block">Home</li>
-               <li class="inline-block">About</li>
-               <li class="inline-block">Service</li>
-               <li class="inline-block">Blog</li>
-               <li class="inline-block">Downloads</li>
-               <li class="inline-block">Contact</li>
-            </b>
+            <b><li class="inline-block"><a href="home.html">Home</a></li>
+                <li class="inline-block"><a href="about.html">About</a></li>
+                <li class="inline-block"><a href="service.html">Service</a></li>
+                <li class="inline-block"><a href="blog.html">Blog</a></li>
+                <li class="inline-block"><a href="downloads.html">Downloads</a></li>
+                <li class="inline-block"><a href="contact.html">Contact</a></li>
+                <li class="inline-block"><a href="career.html">Career</a></li>
+             </b>
         </ul>
     </div>    
     <div class="nav_btn">
@@ -229,6 +230,8 @@
             <h2 class="footer_cnt">AncoraThemes © 2024. All rights reserved.</h2>
         
     </div>
+    <button onclick="topFunction()" id="top_myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
     </div>
      
     
@@ -254,6 +257,28 @@
                 });
             });
         });
+    </script>
+    <!-- a javascript code for #top_mybtn -->
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("top_myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 </html>
