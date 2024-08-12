@@ -1397,14 +1397,16 @@ h2.heading_discription {
         flex-direction: column;
         margin-left: 0px;
     }
+    .slider_btn {
+        padding-top: 10px;
+    }
     .view_more_btn {
         text-align: center;
     }
     .benifit_image_container1 {
         padding: 10px;
         margin: 10px;
-        width: 94%;
-
+        width: 88%;
     }
     .benifit {
         position: inherit;
@@ -1424,7 +1426,7 @@ h2.heading_discription {
     }
     .left_side_container {
         width: 100%;
-        padding-left: 0px;
+        padding: 10px;
     }
     .outer_services_comtainer {
         display: flex;
@@ -1455,15 +1457,20 @@ h2.heading_discription {
         display: flex;
         flex-direction: column;
         margin: 0px;
+       
     }
     .contact_us_outer_container {
         margin: 0px;
+        width: 100%;
+        padding: 10px;
     }
     .form_info_container {
         padding: 10px;
     }
     .message_control {
-    width: 280px;
+    width: 100%;
+    padding: 0px;
+    border-radius: 10px;
     }
     .offer_box {
         display: flex;
@@ -1473,6 +1480,7 @@ h2.heading_discription {
         display: flex;
         margin: 0px;
         flex-direction: column;
+        padding: 10px
     }
     .reviews_content_container {
         padding: 10px;
@@ -1482,7 +1490,7 @@ h2.heading_discription {
     }
 
     .services_section {
-        padding-top: 40px;
+        padding-top: 0px;
     }
     .services_section_container {
         display: flex;
@@ -1495,6 +1503,7 @@ h2.heading_discription {
     }
     .services_paragraph2 {
         width: 100%;
+        padding: 10px;
     }
     .services_image2 img {
         width: 360px;
@@ -1540,6 +1549,9 @@ h2.heading_discription {
     }
     .contact_btn {
         padding: 10px;
+        height: 35px;
+        font-size: 15px;
+        letter-spacing: 1px;
     }
     .slider_content {
         padding-top: 10px;
@@ -1547,30 +1559,34 @@ h2.heading_discription {
         width: 278px;
     }
     .paragraph_container_inner_side {
-        width: 94%;
+        width: 100%;
         padding: 10px;
-        margin: 10px;
+        margin-bottom: 10px;
     }
     h1.services_title {
         font-size: 25px;
+        margin-bottom: 0rem;
     }
     .nav_btn {
         display: none;
     }
     .faq-container {
         padding: 10px;
+        width: 100%;
+        margin: 0px;
     }
     .offer_box_container {
         left: 25px;
-        height: 58%;
+        height: 45%;
         width: 90%;
     }
     .heading_solution_container {
         margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .footer_container {
         margin: 0px;
-        padding:0px;
+        padding: 10px;
     }
     .reviews_heading {
         font-size: 25px;
@@ -1581,11 +1597,11 @@ h2.heading_discription {
     }
     .outer_solution_container {
         padding-bottom: 0px;
-        padding-top: 0px;
+        padding-top: 15px;
     }
     .outer_blog_container {
-        padding-bottom: 0px;
-        padding-top: 20px;
+        width: 100%;
+        padding: 0px;
     }
     .inner_reviews_container {
         background-image: url(../images_hvacwebpages/reviews-mob.jpg);
@@ -1599,11 +1615,336 @@ h2.heading_discription {
     }
     .sevices_big_heading {
         font-size: 39px;
+        margin-bottom: 0px;
     }
     .services_heading {
         font-weight: normal;
         font-size: 25px;
     }
-
-
+    .offer_service_container {
+        background-image: url(../images_hvacwebpages/areas-mob.jpg);
+        height: 750px;
+        width: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat, repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        padding: 10px;
+    }
+    .offer_heading {
+        top: 70px;
+        left: 30px;
+    }
+    .form-control {
+        padding: 0px;
+        width: 100%;
+        margin: 10px;
+    }
+    .contact-map-area-header iframe {
+        width: 100%;
+        padding: 10px;
+    }
+    .contact-map-area-header {
+        padding: 0px;
+    }
+    .footer_section {
+        padding: 10px;
+        width: 100%;
+    }
+    .footer_logo img {
+        width: 170px;
+        height: 120px;
+    }
+    .footer_list {
+        text-transform: none;
+        padding-top: 20px;
+    }
+    li.ending_list {
+        margin: 1px;
+        font-size: 14px;
+    }
+    .contact_info_container {
+        padding: 30px 30px;
+       
+    }
+    .large_heading {
+        font-size: 30px;
+    }
+    .footer_social {
+        padding-bottom: 20px;
+    }
+    .service_section {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .second_service_section {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .service_overview_image img {
+        width: 320px;
+        height: 390px;
+        margin-left: 0px;
+        padding: 15px;
+        object-fit: cover;
+        box-shadow:none;
+    }
+    .service_overview_image {
+        padding: 10px;
+        box-shadow: 0 0 11px #0f2765;
+    }
+    .sevice_info-img {
+        padding: 10px;
+        box-shadow: 0 0 11px #0f2765;
+    }
+    .sevice_info-img img {
+        width: 320px;
+        height: 390px;
+        margin-left: 0px;
+        padding: 15px;
+        object-fit: cover;
+    }
+    .service_info-section {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+    .sevice_overview_section {
+        padding: 0px;
+    }
+    .third_service_section {
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding: 10px;
+    }
+    .third_service_paragraph {
+        margin: 0px;
+        padding: 0px;
+    }
+    h1.service_info-title {
+        margin-bottom: 1rem;
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .info_container {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 5px;
+    }
+    .happy_customer_outer_container {
+        padding: 30px 0px 30px 0px;
+        padding: 10px;
+    }
+    .outer_most_happy_customer_container {
+        padding: 10px;
+        width: 100%;
+    }
+    .content-title_service {
+        width: 378px;
+    }
+    .au_info-img img {
+        width: 340px;
+        height: 350px;
+        object-fit: cover;
+    }
+    .au_info-img {
+        padding: 10px;
+        box-shadow: 0 0 11px #0f2765;
+    }
+    .au_info-img2 {
+        padding: 10px;
+        box-shadow: 0 0 11px #0f2765;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .au_info-img2 img {
+        width: 340px;
+        height: 350px;
+        object-fit: cover;
+    }
+    .au_mission_container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .au_group {
+        padding: 10px 10px;
+        height: 215px;
+        margin-top: 10px;
+        width: 99%;
+        margin-left: 0px;
+    }
+    .au_info-section {
+        padding: 0px;
+    }
+    .broucher_main_heading h3 {
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: 25px;
+        margin-top: 25px;
+    }
+    .broucher_box_container {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .video-container {
+        padding: 10px;
+        width: 350px;
+    }
+    .video-container iframe {
+        width: 100%;
+        height: 210px;
+        object-fit: cover;
+    }
+    .broucher_pdf_box3 {
+        width: 100%;
+        padding: 10px;
+    }
+    .broucher_pdf_box3 img {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .broucher_pdf_box2 {
+        width: 100%;
+        padding: 10px;
+    }
+    .broucher_pdf_box2 img {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .broucher_pdf_box {
+        width: 100%;
+        padding: 10px;
+    }
+    .broucher_pdf_box img {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .content-title_download {
+        height: 150px;
+        width: 375px;
+    }
+    .blog_inner_container {
+        margin: 0px;
+        padding: 10px;
+        width: 357px;
+    }
+    h4.career_name {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+    h1.carrier_heading {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .career_middle_container {
+        margin-bottom: 0px;
+    }
+    .blog_outer_container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .content-title_career {
+        height: 150px;
+        width: 375px;
+    }
+    .CN_quote_inner_container {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+    }
+    .quote_image_container img {
+        height: 280px;
+        width: 100%;
+        object-fit: contain;
+    }
+    .quotes_container {
+        padding-top: 10px;
+        padding: 10px;
+        width: 340px;
+    }
+    .main-tiltle_blog {
+        padding-top: 60px;
+        font-size: 30px;
+    }
+    .main-tiltle_download {
+        padding-top: 60px;
+        font-size: 30px;
+    }
+    .main-tiltle_About {
+        padding-top: 60px;
+        font-size: 30px;
+    }
+    h1.top_heading_CN {
+        font-size: 25px;
+    }
+    .content-title_contact {
+        height: 150px;
+        width: 375px;
+    }
+    .content-title_About {
+        height: 150px;
+        width: 375px;
+    }
+    .blog_left_side_container img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .blog_left_side_container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .blog_right_side_container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }  
+    .main-tiltle_career {
+        padding-top: 60px;
+        font-size: 30px;
+    }  
+    .blog_container {
+        display: flex;
+        padding: 0px;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    .main-tiltle_contact {
+        padding-top: 65px;
+        font-size: 30px;
+    }    
+    button.v_m_btn {
+        border-radius: 10px;
+        font-weight: 700;
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+    #top_myBtn {
+        right: 10px;
+    }
+    .content-title_blog {
+        height: 150px;
+        width: 375px;
+    }
+    .heading_contact_now {
+        margin: 0 auto 15px;
+    }
+    .form-group {
+        margin-bottom: 0px;
+    }
+    p.blog_para {
+        margin-bottom: 15px;
+        line-height: 20px;
+    }
+    h3.blog_top_heading {
+        font-size: 15px;
+    }
+    
+    
+    
 }
+    
