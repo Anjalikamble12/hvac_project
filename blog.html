@@ -423,7 +423,32 @@
     <button onclick="topFunction()" id="top_myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 
     </div>
-     
+    <menunav>
+        <div class="menu-toggle" id="mobile-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu-nav-list" id="menu-nav-list">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="downloads.html">Download</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="career.html">Career</a></li>
+            </ul>
+        </div>
+    </menunav>
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.getElementById('menu-nav-list');
+    
+    menuToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
+    </script>
     
     
     <script>
@@ -470,5 +495,6 @@
           document.documentElement.scrollTop = 0;
         }
     </script>
+    
 </body>
 </html>

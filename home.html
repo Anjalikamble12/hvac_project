@@ -111,7 +111,7 @@
                 enclosed space. 
                 </div>
                 <div class="view_more_btn">
-                    <button class="v_m_btn">View more</button>
+                    <button class="v_m_btn"><a href="about.html">View more</a></button>
                 </div>
         </div>
         <div class="left_side_container">
@@ -202,7 +202,7 @@
             give up on the frostiest night. In Houston, regular maintenance is recommended to ensure the durability 
             of your residential HVAC system.</p>
             <div class="view_more_btn">
-                <button class="v_m_btn">View more</button>
+                <button class="v_m_btn"><a href="about.html">View more</a></button>
             </div>
             </div>
         </div>
@@ -383,7 +383,7 @@
             </div>
             <div class="button_container">
                 <div class="read_more_btn">
-                    <button class="r_m_btn">Read More</button>
+                    <button class="v_m_btn"><a href="blog.html">Read more</a></button>
                 </div>
             </div>
         </div>
@@ -401,7 +401,7 @@
             </div>
             <div class="button_container">
                 <div class="read_more_btn">
-                    <button class="r_m_btn">Read More</button>
+                    <button class="v_m_btn"><a href="blog.html">Read more</a></button>
                 </div>
             </div>
         </div>
@@ -417,7 +417,7 @@
             </div>
             <div class="button_container">
             <div class="read_more_btn">
-                <button class="r_m_btn">Read More</button>
+                <button class="v_m_btn"><a href="blog.html">Read more</a></button>
             </div>
         </div>
         </div>
@@ -623,6 +623,32 @@
 <button onclick="topFunction()" id="top_myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 
 </div>
+<menunav>
+    <div class="menu-toggle" id="mobile-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="menu-nav-list" id="menu-nav-list">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="downloads.html">Download</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="career.html">Career</a></li>
+        </ul>
+    </div>
+</menunav>
+<script>
+    const menuToggle = document.getElementById('mobile-menu');
+const navList = document.getElementById('menu-nav-list');
+
+menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
+</script>
  <!-- a code for faq question -->
  <script>
     document.addEventListener('DOMContentLoaded', function () {
