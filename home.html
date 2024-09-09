@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
 </head>
 
 <body>
@@ -51,8 +57,8 @@
                 <li class="inline-block"><a href="service.html">Service</a></li>
                 <li class="inline-block"><a href="blog.html">Blog</a></li>
                 <li class="inline-block"><a href="downloads.html">Downloads</a></li>
-                <li class="inline-block"><a href="contact.html">Contact</a></li>
                 <li class="inline-block"><a href="career.html">Career</a></li>
+                <li class="inline-block"><a href="contact.html">Contact</a></li>
              </b>
         </ul>
     </div>    
@@ -71,7 +77,7 @@
         <div class="slider_heading">keeping your home comfortable all year long</div>
         <div class="slider_content">that air conditioning system regularly maintained</div>
         <div class="slider_btn">
-            <button class="contact_btn">Contact Us</button>
+            <button class="contact_btn"><a href="contact.html">Contact Us</a></button>
         </div>
     </div>
 </div>
@@ -98,7 +104,7 @@
 </div>
 <div class="about_us_outer_container">
     <div class="about_us_middle_container">
-        <div class="right_side_container">
+        <div class="right_side_container animate__animated animate__rollIn">
             <div class="about_us_heading">About <span class="blue">us</span></div>
             <div class="about_us_paragraph">"HVAC" redirects here. The term may also refer to high-voltage alternating current.
                 Rooftop HVAC unit with view of fresh-air intake vent Ventilation duct with outlet diffuser vent. These are installed 
@@ -115,7 +121,7 @@
                 </div>
         </div>
         <div class="left_side_container">
-            <div class="mission_container">
+            <div class="mission_container ">
             <div class="group">
                 <div class="wrap-dot">
                 <div class="dot">
@@ -128,6 +134,9 @@
                      Trigeneration by leveraging technical know-how & project 
                      management ability."</p>
             </div>
+            <div class="overlay">
+                <div class="text">Our Mission</div>
+              </div>
             </div>
             <div class="mission_container">
                 <div class="group">
@@ -140,6 +149,9 @@
                     <p class="benifit-paragraph">Knowledge Sharing,   Inclusiveness,   
                         Teamwork,   Flexibility</p>
                 </div>
+                <div class="overlay">
+                    <div class="text">Our Values</div>
+                  </div>
                 </div>
         </div>
 
@@ -161,56 +173,88 @@
         </div>
     </div>
     <div class="services_outer_container">
-        <div class="services_iamges_container">
-            <div class="services1_image">
-                <img src="images_hvacwebpages/service-1.JPG" alt="services1_image">
-                <div class="services_caption">maintainance Ac</div>
-            </div>
-            <div class="services1_image">
-                <img src="images_hvacwebpages/hvac_services2.jpg" alt="services1_image">
-                <div class="services_caption">hvac repairing</div>
-            </div>
-            <div class="services1_image">
-                <img src="images_hvacwebpages/hvac_services3.jpg" alt="services1_image">
-                <div class="services_caption">Ac repairing</div>
-            </div>
-            <div class="services1_image">
-                <img src="images_hvacwebpages/hvac_services6.jpg" alt="services1_image">
-                <div class="services_caption">AC installation</div>
-            </div>
-            <div class="services1_image">
-                <img src="images_hvacwebpages/hvac_services5.jpg" alt="services1_image">
-                <div class="services_caption">maintainance of Air</div>
-            </div>
-            <div class="services1_image">
-                <img src="images_hvacwebpages/hvac_services8.jpg" alt="services1_image">
-                <div class="services_caption">HVAc installation</div>
+        <div class="services_images_container">
+            <!-- Duplicate the content to create a seamless loop -->
+            <div class="services_wrapper">
+                <div class="services1_image">
+                    <img src="images_hvacwebpages/service-1.JPG" alt="services1_image">
+                    <div class="services_caption">Maintenance AC</div>
+                </div>
+                <div class="services1_image">
+                    <img src="images_hvacwebpages/hvac_services2.jpg" alt="services1_image">
+                    <div class="services_caption">HVAC Repairing</div>
+                </div>
+                <div class="services1_image">
+                    <img src="images_hvacwebpages/hvac_services3.jpg" alt="services1_image">
+                    <div class="services_caption">AC Repairing</div>
+                </div>
+                <div class="services1_image">
+                    <img src="images_hvacwebpages/hvac_services6.jpg" alt="services1_image">
+                    <div class="services_caption">AC Installation</div>
+                </div>
+                <div class="services1_image">
+                    <img src="images_hvacwebpages/hvac_services5.jpg" alt="services1_image">
+                    <div class="services_caption">Maintenance of Air</div>
+                </div>
+                <div class="services1_image">
+                    <img src="images_hvacwebpages/hvac_services8.jpg" alt="services1_image">
+                    <div class="services_caption">HVAC Installation</div>
+                </div>
+                <!-- Repeat the same images to ensure a smooth loop -->
+                <div class="services1_image">
+                    <img src="images_hvacwebpages/service-1.JPG" alt="services1_image">
+                    <div class="services_caption">Maintenance AC</div>
+                </div>
+                <div class="services1_image">
+                    <img src="images_hvacwebpages/hvac_services2.jpg" alt="services1_image">
+                    <div class="services_caption">HVAC Repairing</div>
+                </div>
+                <div class="services1_image">
+                    <img src="images_hvacwebpages/hvac_services3.jpg" alt="services1_image">
+                    <div class="services_caption">AC Repairing</div>
+                </div>
+                <div class="services1_image">
+                    <img src="images_hvacwebpages/hvac_services6.jpg" alt="services1_image">
+                    <div class="services_caption">AC Installation</div>
+                </div>
+                <div class="services1_image">
+                    <img src="images_hvacwebpages/hvac_services5.jpg" alt="services1_image">
+                    <div class="services_caption">Maintenance of Air</div>
+                </div>
+                <div class="services1_image">
+                    <img src="images_hvacwebpages/hvac_services8.jpg" alt="services1_image">
+                    <div class="services_caption">HVAC Installation</div>
+                </div>
             </div>
         </div>
     </div>
     </div>
     <div class="services_section">
         <div class="services_section_container">
-        <div class="info_services">
-        <h1 class="services_title">Cooling Solutions offering Centralized HVAC Services.</h1> 
-        <div class="services_paragraph2"><p>MG Cooling Solutions is a leading HVAC services company in India, 
-            offering a wide range of centralized and industrial air conditioning solutions for any
-            building type. We are a one-stop-shop for all your HVAC needs,<br>
-            Air conditioning systems will give you a much better service if they are well cared for.
-            If they are neglected, they might break down when you need them most. Your air-conditioning 
-            system could simply stop working on the hottest afternoon of the season, or your furnace could 
-            give up on the frostiest night. In Houston, regular maintenance is recommended to ensure the durability 
-            of your residential HVAC system.</p>
-            <div class="view_more_btn">
-                <button class="v_m_btn"><a href="about.html">View more</a></button>
+            <div class="info_services">
+                <h1 class="services_title wow animate__animated animate__fadeInLeft">Cooling Solutions offering Centralized HVAC Services.</h1> 
+                <div class="services_paragraph2 wow animate__animated animate__fadeInLeft">
+                    <p>MG Cooling Solutions is a leading HVAC services company in India, offering a wide range of centralized and industrial air conditioning solutions for any building type. We are a one-stop-shop for all your HVAC needs,<br>
+                    Air conditioning systems will give you a much better service if they are well cared for. If they are neglected, they might break down when you need them most. Your air-conditioning system could simply stop working on the hottest afternoon of the season, or your furnace could give up on the frostiest night. In Houston, regular maintenance is recommended to ensure the durability of your residential HVAC system.</p>
+                    <div class="view_more_btn">
+                        <button class="v_m_btn"><a href="service.html">View more</a></button>
+                    </div>
+                </div>
             </div>
+            <div class="services_image2 wow animate__animated animate__fadeInRight">
+                <div class="services_image2_container">
+                    <img src="images_hvacwebpages/hvac_services2.jpg" alt="info" class="active">
+                    <img src="images_hvacwebpages/hvac_services3.jpg" alt="info">
+                    <img src="images_hvacwebpages/hvac_services6.jpg" alt="info">
+                </div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <div class="dots">
+                    <span class="dot active" onclick="setSlide(0)"></span> 
+                    <span class="dot" onclick="setSlide(1)"></span> 
+                    <span class="dot" onclick="setSlide(2)"></span> 
+                </div>
             </div>
-        </div>
-        <div class="services_image2">
-            <div class="services_image2_container">
-            <img src="images_hvacwebpages/hvac_services2.jpg" alt="info">
-        </div>
-        </div>
         </div>
     </div>
     <div class="outer_solution_container">
@@ -219,10 +263,10 @@
                 <div class="heading_solution">Solutions</div>
             </div>
             <div class="paragraph_container_outer">
-            <div class="paragraph_container_inner_side">
+            <div class="paragraph_container_inner_side animate__fadeInLeftBig">
                 <div class="solution_iamge">
                     <img src="images_hvacwebpages/solutions_image.jpg" alt="solution_iamge">
-                </div>
+                    </div>
                 <div class="solution_heading">Air conditioning and Ventilation</div>
                 <div class="solution_paragrapg">We have expertise in Central Air 
                     Conditioning & Ventilation for all types of industrial spaces 
@@ -231,7 +275,7 @@
                       Air Handling Units, Ducting, Piping, BMS, PLC Panels etc.
                 </div>
             </div>
-            <div class="paragraph_container_inner_side">
+            <div class="paragraph_container_inner_side  animate__fadeInLeftBig">
                 <div class="solution_iamge">
                     <img src="images_hvacwebpages/solutions_image1.jpg" alt="solution_iamge">
                 </div>
@@ -242,7 +286,7 @@
                       degree of temperatures and with critical pressure/flow controls.
                 </div>
             </div>
-            <div class="paragraph_container_inner_side">
+            <div class="paragraph_container_inner_side animate__fadeInRightBig">
                 <div class="solution_iamge">
                     <img src="images_hvacwebpages/solutions_image2.jpg" alt="solution_iamge">
                 </div>
@@ -253,7 +297,7 @@
                     cooling & heating demand cycle achieving reduction in carbon print.
                 </div>
             </div>
-            <div class="paragraph_container_inner_side">
+            <div class="paragraph_container_inner_side animate__fadeInRightBig">
                 <div class="solution_iamge">
                     <img src="images_hvacwebpages/solutions_image3.jpg" alt="solution_iamge">
                 </div>
@@ -273,30 +317,130 @@
         <button class="v_m_btn">Read More</button>
     </div>
 </div>
+<div class="reviews_outer_side_container">
+<div class="reviews_outer_container">
 <div class="reviews_container">
     <div class="inner_reviews_container">
-
-    </div>
-    <div class="reviews_content_container">
         <div class="inner_side_container">
-        <div class="reviews_heading">Client Reviews</div>
-        <div class="reviews_content">“Leo was a VERY professional,
-             quick and friendly. He was honest about what was important 
-             to fix right away, and what repairs could wait till next time. 
-             We felt our AC and heat was in good hands with him!”
+            <div class="reviews_heading">Client Reviews</div>
+            <div class="reviews_content">“Leo was a VERY professional, quick and friendly. He was honest about what was important to fix right away, and what repairs could wait till next time. We felt our AC and heat was in good hands with him!”</div>
+            <div class="reviewer_name">Naila Dawala</div>
+            <div class="reviews_ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
         </div>
-        <div class="reviewer_name">Naila Dawala</div>
-        <div class="reviews_ratings">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+        <div class="inner_side_container">
+            <div class="reviews_heading">Client Reviews</div>
+            <div class="reviews_content">“Excellent service! The technician was on time, professional, and resolved the issue with our heating system quickly. Highly recommended!”</div>
+            <div class="reviewer_name">John Smith</div>
+            <div class="reviews_ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
         </div>
-        </div>   
+        <div class="inner_side_container">
+            <div class="reviews_heading">Client Reviews</div>
+            <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
+            <div class="reviewer_name">Emily Johnson</div>
+            <div class="reviews_ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="inner_side_container">
+            <div class="reviews_heading">Client Reviews</div>
+            <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
+            <div class="reviewer_name">Emily Johnson</div>
+            <div class="reviews_ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="inner_side_container">
+            <div class="reviews_heading">Client Reviews</div>
+            <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
+            <div class="reviewer_name">Emily Johnson</div>
+            <div class="reviews_ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="inner_side_container">
+            <div class="reviews_heading">Client Reviews</div>
+            <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
+            <div class="reviewer_name">Emily Johnson</div>
+            <div class="reviews_ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="inner_side_container">
+            <div class="reviews_heading">Client Reviews</div>
+            <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
+            <div class="reviewer_name">Emily Johnson</div>
+            <div class="reviews_ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="inner_side_container">
+            <div class="reviews_heading">Client Reviews</div>
+            <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
+            <div class="reviewer_name">Emily Johnson</div>
+            <div class="reviews_ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="inner_side_container">
+            <div class="reviews_heading">Client Reviews</div>
+            <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
+            <div class="reviewer_name">Emily Johnson</div>
+            <div class="reviews_ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="inner_side_container">
+            <div class="reviews_heading">Client Reviews</div>
+            <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
+            <div class="reviewer_name">Emily Johnson</div>
+            <div class="reviews_ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
     </div>
     <div class="reviews_quotes">
         <i class="fa-solid fa-quote-right"></i>
     </div>
+    <div class="nav_buttons">
+        <button id="prevBtn">&lt;</button>
+        <button id="nextBtn">&gt;</button>
+    </div>
+</div>
+</div>
 </div>
 <div class="outer_solution_container">
     <div class="inner_director_container">
@@ -430,7 +574,7 @@
     </div>
     <div class="offer_heading">Services We Offer</div>
     <div class="offer_box_container">
-    <div class="offer_box">
+    <div class="offer_box animate__animated animate__fadeInLeftBig">
         <div class="offer_box_innerside">
             <div class="offer_content1_box">
                 <div class="offer_content1">AC Installation</div>
@@ -591,12 +735,13 @@
     </div>
         <div class="footer_list">
         <ul>
-            <li class="ending_list">Home</li>
-            <li class="ending_list">About</li>
-            <li class="ending_list">Service</li>
-            <li class="ending_list">Blog</li>
-            <li class="ending_list">Downloads</li>
-            <li class="ending_list">Contact</li>
+            <li class="ending_list"><a href="home.html">Home</a></li>
+            <li class="ending_list"><a href="about.html">About</a></li>
+            <li class="ending_list"><a href="service.html">Service</a></li>
+            <li class="ending_list"><a href="blog.html">Blog</a></li>
+            <li class="ending_list"><a href="downloads.html">Downloads</a></li>
+            <li class="ending_list"><a href="career.html">Career</a></li>
+            <li class="ending_list"><a href="contact.html">Contact</a></li>
         </ul>
     </div>
     <div class="footer_social">
@@ -695,5 +840,63 @@ menuToggle.addEventListener('click', () => {
           document.documentElement.scrollTop = 0;
         }
     </script>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.services_image2_container img');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+    
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                dots[i].classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                    dots[i].classList.add('active');
+                }
+            });
+        }
+    
+        function changeSlide(step) {
+            currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+    
+        function setSlide(index) {
+            currentSlide = index;
+            showSlide(currentSlide);
+        }
+    
+    </script>
+     <script>
+        // JavaScript code
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const reviewsContainer = document.querySelector('.inner_reviews_container');
+        let currentIndex = 0;
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlide();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < 9) {
+                currentIndex++;
+                updateSlide();
+            }
+        });
+
+        function updateSlide() {
+            reviewsContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+    </script>
+     <script>
+        new WOW().init();
+    </script>
+
+
 </body>
 </html>

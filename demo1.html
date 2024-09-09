@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <style>
+        .paragraph_container_inner_side {
+            width: 100%;
+            border: 1px solid black;
+            box-shadow: 0 0 11px #ababab;
+            margin-right: 20px;
+            border-radius: 2px;
+            padding: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .paragraph_container_inner_side:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #888888;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="paragraph_container_inner_side">
+    <p>This is some content inside the div. Hover over this div to see the effect.</p>
+</div>
+
+</body>
+</html>
