@@ -1,352 +1,111 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HVAC WEBPAGE</title>
-        <link rel="stylesheet" href="css/styles.css">
-
-    </head>
-
-    <body>
-        <div class="solution_image">
-            <img src="images_hvacwebpages/blog_image.jpg" alt="solution_image">
-            <div class="overlay">
-                <div class="overlay_text">Your Text Here</div>
-            </div>
-        </div>
-        
-        
-    </body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Reviews</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Navbar Dropdown</title>
     <style>
-        /* CSS code */
-     
-
-        .reviews_container {
-            width: 400px;
-            position: relative;
-            overflow: hidden;
-            background: #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            padding: 20px;
-        }
-
-        .inner_reviews_container {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .inner_side_container {
-            min-width: 100%;
+        * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
-            padding: 20px;
         }
 
-        .reviews_heading {
-            font-size: 24px;
-            margin-bottom: 10px;
+        body {
+            font-family: Arial, sans-serif;
         }
 
-        .reviews_content {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 20px;
+        .nav-menu-list {
+            background-color: #333;
+            padding: 10px 0;
         }
 
-        .reviewer_name {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .reviews_ratings i {
-            color: #f39c12;
-        }
-
-        .reviews_quotes {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 30px;
-            color: #ddd;
-        }
-
-        .nav_buttons {
+        .menu-list {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
         }
 
-        .nav_buttons button {
-            background-color: transparent;
-            border: none;
-            font-size: 20px;
-            margin: 0 10px;
-            cursor: pointer;
-            position: relative;
-            padding-bottom: 5px;
-        }
-
-        .nav_buttons button:after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #000;
-            transition: width 0.3s;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-
-        .nav_buttons button:hover:after,
-        .nav_buttons button.active:after {
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <div class="reviews_container">
-        <div class="inner_reviews_container">
-            <div class="inner_side_container">
-                <div class="reviews_heading">Client Reviews</div>
-                <div class="reviews_content">“Leo was a VERY professional, quick and friendly. He was honest about what was important to fix right away, and what repairs could wait till next time. We felt our AC and heat was in good hands with him!”</div>
-                <div class="reviewer_name">Naila Dawala</div>
-                <div class="reviews_ratings">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="inner_side_container">
-                <div class="reviews_heading">Client Reviews</div>
-                <div class="reviews_content">“Excellent service! The technician was on time, professional, and resolved the issue with our heating system quickly. Highly recommended!”</div>
-                <div class="reviewer_name">John Smith</div>
-                <div class="reviews_ratings">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="inner_side_container">
-                <div class="reviews_heading">Client Reviews</div>
-                <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
-                <div class="reviewer_name">Emily Johnson</div>
-                <div class="reviews_ratings">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="inner_side_container">
-                <div class="reviews_heading">Client Reviews</div>
-                <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
-                <div class="reviewer_name">Emily Johnson</div>
-                <div class="reviews_ratings">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="inner_side_container">
-                <div class="reviews_heading">Client Reviews</div>
-                <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
-                <div class="reviewer_name">Emily Johnson</div>
-                <div class="reviews_ratings">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="inner_side_container">
-                <div class="reviews_heading">Client Reviews</div>
-                <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
-                <div class="reviewer_name">Emily Johnson</div>
-                <div class="reviews_ratings">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="inner_side_container">
-                <div class="reviews_heading">Client Reviews</div>
-                <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
-                <div class="reviewer_name">Emily Johnson</div>
-                <div class="reviews_ratings">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="inner_side_container">
-                <div class="reviews_heading">Client Reviews</div>
-                <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
-                <div class="reviewer_name">Emily Johnson</div>
-                <div class="reviews_ratings">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="inner_side_container">
-                <div class="reviews_heading">Client Reviews</div>
-                <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
-                <div class="reviewer_name">Emily Johnson</div>
-                <div class="reviews_ratings">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-            <div class="inner_side_container">
-                <div class="reviews_heading">Client Reviews</div>
-                <div class="reviews_content">“The installation process was seamless, and the team did a great job. Our new AC system works perfectly. Would definitely use their services again.”</div>
-                <div class="reviewer_name">Emily Johnson</div>
-                <div class="reviews_ratings">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-        </div>
-        <div class="reviews_quotes">
-            <i class="fa-solid fa-quote-right"></i>
-        </div>
-        <div class="nav_buttons">
-            <button id="prevBtn">&lt;</button>
-            <button id="nextBtn">&gt;</button>
-        </div>
-    </div>
-
-    <script>
-        // JavaScript code
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        const reviewsContainer = document.querySelector('.inner_reviews_container');
-        let currentIndex = 0;
-
-        prevBtn.addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateSlide();
-            }
-        });
-
-        nextBtn.addEventListener('click', () => {
-            if (currentIndex < 9) {
-                currentIndex++;
-                updateSlide();
-            }
-        });
-
-        function updateSlide() {
-            reviewsContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Role</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* CSS code */
-        .career_role_name_container {
+        .nav-list-ul ul {
+            list-style-type: none;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 15px;
+        }
+        ul.submenu {
+         display: none;
+        }
+
+        .nav-list-ul ul li {
             position: relative;
-        }
-        .career_content {
-            display: flex;
-            align-items: center;
+            margin: 0 20px;
         }
 
-        .career_icon_box {
-            margin-right: 8px;
-            color: #333;
-        }
-
-        .career_name {
-            margin-right: 15px;
+        .nav-list-ul ul li a, .submenu-span-in {
+            color: white;
+            text-decoration: none;
             font-size: 16px;
-            color: #333;
-        }
-
-        .carrier_heading {
-            font-size: 24px;
-            color: #333;
-            cursor: pointer;
-        }
-
-        /* Apply Here Button */
-        .apply_button {
-            background-color: blue;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
+            padding: 10px 15px;
+            display: block;
             transition: background-color 0.3s ease;
         }
 
-        .apply_button:hover {
-            background-color: green;
+        .nav-list-ul ul li a:hover, .submenu-span-in:hover {
+            background-color: #575757;
+        }
+
+        /* Dropdown menu styles */
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            top: 100%;
+            left: 0;
+            width: 180px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .submenu li {
+            display: block;
+        }
+
+        .submenu li a {
+            padding: 10px;
+            color: white;
+        }
+
+        .submenu li a:hover {
+            background-color: #575757;
+        }
+
+        /* Show the submenu when hovering over the product link */
+        .has-submenu:hover .submenu {
+            display: block;
         }
     </style>
 </head>
 <body>
 
-    <div class="career_role_name_container">
-        <div>
-            <h1 class="carrier_heading" onclick="toggleDescription('job1')">Sales Manager</h1>
-            <div class="career_content">
-                <div class="career_icon_box"><i class="fa-solid fa-location-dot"></i></div>
-                <h4 class="career_name">Pune</h4>
-                <div class="career_icon_box"><i class="fa-solid fa-clock"></i></div>
-                <h4 class="career_name">Full Time</h4>
-                <div class="career_icon_box"><i class="fa-solid fa-folder"></i></div>
-                <h4 class="career_name">Frontend</h4>
-            </div>
+    <div class="nav-menu-list">
+        <div class="menu-list">
+            <nav class="nav-list-ul">
+                <ul class="nav-list">
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li class="has-submenu">
+                        <a href="about.html" class="submenu-span-in">PRODUCT</a>
+                        <ul class="submenu">
+                            <li><a href="odoo_cloud.html">Oddo/Cloud ERP</a></li>
+                            <li><a href="task_trak.html">TaskTrak Hub</a></li>
+                            <li><a href="hvac_task.html">HVAC Task Manager</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="research.html">RESEARCH</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="career.html">CAREER</a></li>
+                    <li><a href="blogs.html">BLOGS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
         </div>
-        <button class="apply_button" onclick="applyNow()">Apply Here</button>
     </div>
-
-    <script>
-        // JavaScript function to change button color
-        function applyNow() {
-            alert('Applying for the position!');
-        }
-    </script>
 
 </body>
 </html>
-
-

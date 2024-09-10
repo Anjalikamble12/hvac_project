@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 </head>
 <body>
@@ -44,18 +45,30 @@
         <img src="images_hvacwebpages/top_logo.jpg" alt="logo">
     </div>
 </div>
-    <div class="navbar_list">
-        <ul>
-            <b><li class="inline-block"><a href="home.html">Home</a></li>
+<div class="nav-menu-list">
+    <div class="menu-list">
+        <nav class="nav-list-ul">
+            <ul class="nav-list">
+                <li class="inline-block"><a href="home.html">Home</a></li>
                 <li class="inline-block"><a href="about.html">About</a></li>
-                <li class="inline-block"><a href="service.html">Service</a></li>
+                <li class="inline-block">
+                    <a href="service.html" class="submenu-span-in">Service</a>
+                    <ul class="submenu">
+                        <li><a href="odoo_cloud.html">Indoor Air Quality</a></li>
+                        <li><a href="task_trak.html">Service & Repairs</a></li>
+                        <li><a href="task_trak.html">HVAC</a></li>
+                        <li><a href="hvac_task.html">Heating</a></li>
+                        <li><a href="hvac_task.html">Air Conditioning</a></li>
+                    </ul>
+                </li>
                 <li class="inline-block"><a href="blog.html">Blog</a></li>
                 <li class="inline-block"><a href="downloads.html">Downloads</a></li>
-                <li class="inline-block"><a href="contact.html">Contact</a></li>
                 <li class="inline-block"><a href="career.html">Career</a></li>
-             </b>
-        </ul>
-    </div>    
+                <li class="inline-block"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>    
     <div class="nav_btn">
         <button class="request_btn">Order service</button>
     </div>
@@ -68,10 +81,10 @@
 
 <div class="contact_us_outer_container">
     <div class="contact_us_inner_container">
-        <h1 class="top_heading_CN">Contact Us for All Your HVAC Needs</h1>
-        <h4 class="second_heading_CN">Schedule your air conditioning repair, service, 
+        <h1 class="top_heading_CN wow animate__animated animate__fadeInDownBig">Contact Us for All Your HVAC Needs</h1>
+        <h4 class="second_heading_CN wow animate__animated animate__fadeInLeftBig">Schedule your air conditioning repair, service, 
             or estimate now!</h4>
-        <p class="CN_paragraph">We understand your busy lifestyle. Sometimes it is not 
+        <p class="CN_paragraph wow animate__animated animate__fadeInLeftBig">We understand your busy lifestyle. Sometimes it is not 
             convenient to call or you just don't want to. That's why House Pro gives you 
             the option to schedule online or ask any questions you may need answered about 
             your HVAC system.  </p>
@@ -79,24 +92,24 @@
 </div> 
 <div class="CN_quote_outer_container">
     <div class="CN_quote_inner_container">
-        <div class="quote_image_container">
+        <div class="quote_image_container wow animate__animated animate__rollIn">
             <img src="images_hvacwebpages/quote_image1.jpg" alt="quote_image1">
         </div>
         <div class="quotes_container">
-            <h2 class="quote_heading">Put The Team to Work for You</h2>
-            <p class="CN_paragraph">We are a team of passionate, talented individuals who
+            <h2 class="quote_heading wow animate__animated animate__fadeInDownBig">Put The Team to Work for You</h2>
+            <p class="CN_paragraph wow animate__animated animate__fadeInRightBig">We are a team of passionate, talented individuals who
                  work to make sure our clients receive the best of our services. 
                  From our professional webmasters, to social media gurus, to specialized writers, 
                  we can handle all your internet marketing needs.
             </p>
             <div class="read_more_btn">
-                <button class="v_m_btn">Call Now!</button>
+                <button class="v_m_btn wow animate__animated animate__fadeInRightBig">Call Now!</button>
             </div>
 
         </div>
     </div>
 </div>  
-<div class="faq-container">
+<div class="faq-container wow animate__animated animate__zoomInDown animate__delay-5S">
         <h2 class="h2-text-erp-case h2-text-faq-case">Frequently Asked Questions</h2>
         <div class="faq-item">
             <div class="faq-question">Why is HVAC maintenance important?</div>
@@ -144,7 +157,7 @@
                 <h2>Contact Us</h2>
             </div>
         </div>
-        <div class="first_contact_now_container">
+        <div class="first_contact_now_container wow animate__animated animate__rollIn animate__delay-5S">
             <div class="contact_info_container">
                 <div class="heading_contact_now">
                     <h4>Contact Now</h4>
@@ -304,6 +317,20 @@
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
         }
+    </script>
+      <script>
+        new WOW().init();
+    </script>
+      <script>
+        // JavaScript to highlight the active navigation link
+const currentPage = location.pathname.split("/").pop();
+const navLinks = document.querySelectorAll(".nav-list-ul ul a");
+
+navLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+    }
+});
     </script>
 </body>
 </html>

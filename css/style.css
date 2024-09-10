@@ -53,16 +53,17 @@ i.fa-brands.fa-instagram {
     height: 100px;
 }
 .image-container {
-    width: 20%;
+    width: 15%;
 }
 li.inline-block {
     display: inline-block;
     padding: 10px;
 }
 .navbar_list {
-    width: 60%;
+    width: 70%;
     display: flex;
     align-items: center;
+    padding: 10px 0;
 }
 li.inline-block {
     display: inline-block;
@@ -72,6 +73,65 @@ li.inline-block {
 li.inline-block a {
     text-decoration: none;
     color: black;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+.nav-menu-list {
+    padding: 10px 0;
+    font-weight: bold;
+    display: flex;
+}
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list-ul ul {
+    list-style-type: none;
+    display: flex;
+}
+ul.submenu {
+ display: none;
+}
+
+.nav-list-ul ul li {
+    position: relative;
+}
+
+.nav-list-ul ul li a, .submenu-span-in {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Dropdown menu styles */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.submenu li {
+    display: block;
+}
+ul.submenu li a {
+    color:black;
+    font-size: 14px;
+}
+li.inline-block a.active {
+    color: blue;
+}
+
+/* Show the submenu when hovering over the product link */
+.inline-block:hover .submenu {
+    display: block;
 }
 .request_btn {
     color: white;
@@ -1120,9 +1180,30 @@ h1.feedback_content {
 .info_container {
     padding: 30px;
     text-align: center;
-    margin-left: 15%;
-    margin-right: 16%;
     color: white;
+    margin: 20px 0;
+}
+.info_container h1 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.outer_most_happy_customer_container {
+    width: 100%;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.heading_happy_customer h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.name_container h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px;
 }
 h1.feedback_info {
     font-size: 25px;
@@ -1132,6 +1213,45 @@ h1.feedbacker_name {
     font-size: 15px;
     text-transform: uppercase;
     color: white;
+}
+.client_images img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.client_images img:hover {
+    transform: scale(1.2);
+}
+ /* Carousel Button Styles */
+ .carousel-btn {
+    background-color: rgba(251, 245, 245, 0.911);
+    color: #5440c7;
+    border: none;
+    font-size: 24px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+    
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 15px;
+}
+
+.next-btn {
+    right: 15px;
 }
 h1.feedback_client {
     text-align: center;
@@ -1688,6 +1808,7 @@ h2.heading_discription {
     margin-bottom: 15px;
     position: relative;
 }
+
  
 
 /*............................................Media queries.....................................*/
@@ -1767,6 +1888,9 @@ h2.heading_discription {
         width: 100%;
         opacity: inherit;
         padding: 10px;
+    }
+    nav.nav-list-ul {
+        display: none;
     }
     .services_iamges_container {
         display: none;
@@ -2087,6 +2211,7 @@ h2.heading_discription {
         padding: 10px;
         width: 100%;
     }
+    
     .content-title_service {
         width: 100%;
     }
@@ -2570,7 +2695,7 @@ h2.heading_discription {
     }
     .navbar_list {
         width: 100%;
-        font-size: 14px;
+        font-size: 13px;
     }
     .nav_btn {
         display: none;
@@ -2747,7 +2872,7 @@ p.blog_para {
         margin-left: 0px;
     }
     .image-container {
-        width: 25%;
+        width: 21%;
         display: flex;
         justify-content: center;
     }
@@ -2757,7 +2882,8 @@ p.blog_para {
         width: 80px;
     }
     .navbar_list {
-        width: 74%;
+        width: 80%;
+        font-size: 15px;
     }
     li.inline-block {
         padding: 3px;

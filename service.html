@@ -5,12 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HVAC SERVICE WEBPAGE</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
     </head>
     <body>
         <div class="main-navbar">
@@ -48,25 +46,30 @@
                                 alt="logo">
                         </div>
                     </div>
-                    <div class="navbar_list">
-                        <ul>
-                            <b><li class="inline-block"><a
-                                        href="home.html">Home</a></li>
-                                <li class="inline-block"><a
-                                        href="about.html">About</a></li>
-                                <li class="inline-block"><a
-                                        href="service.html">Service</a></li>
-                                <li class="inline-block"><a
-                                        href="blog.html">Blog</a></li>
-                                <li class="inline-block"><a
-                                        href="downloads.html">Downloads</a></li>
-                                <li class="inline-block"><a
-                                        href="contact.html">Contact</a></li>
-                                <li class="inline-block"><a
-                                        href="career.html">Career</a></li>
-                            </b>
-                        </ul>
-                    </div>
+                    <div class="nav-menu-list">
+                        <div class="menu-list">
+                            <nav class="nav-list-ul">
+                                <ul class="nav-list">
+                                    <li class="inline-block"><a href="home.html">Home</a></li>
+                                    <li class="inline-block"><a href="about.html">About</a></li>
+                                    <li class="inline-block">
+                                        <a href="service.html" class="submenu-span-in">Service</a>
+                                        <ul class="submenu">
+                                            <li><a href="odoo_cloud.html">Indoor Air Quality</a></li>
+                                            <li><a href="task_trak.html">Service & Repairs</a></li>
+                                            <li><a href="task_trak.html">HVAC</a></li>
+                                            <li><a href="hvac_task.html">Heating</a></li>
+                                            <li><a href="hvac_task.html">Air Conditioning</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="inline-block"><a href="blog.html">Blog</a></li>
+                                    <li class="inline-block"><a href="downloads.html">Downloads</a></li>
+                                    <li class="inline-block"><a href="career.html">Career</a></li>
+                                    <li class="inline-block"><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div> 
                     <div class="nav_btn">
                         <button class="request_btn">Order service</button>
                     </div>
@@ -79,9 +82,9 @@
         <div class="service_section">
             <div class="service_info-section">
                 <h1 class="sevice_title">Services</h1>
-                <h1 class="service_info-title">Cooling Solutions offering
+                <h1 class="service_info-title wow animate__animated animate__fadeInDownBig">Cooling Solutions offering
                     Centralized HVAC Services.</h1>
-                <div class="service_paragraph"><p>MG Cooling Solutions is a
+                <div class="service_paragraph wow animate__animated animate__fadeInLeftBig"><p>MG Cooling Solutions is a
                         leading HVAC services company in India,
                         offering a wide range of centralized and industrial air
                         conditioning solutions for any
@@ -106,19 +109,18 @@
                         conditioning environment gets created.</p>
                 </div>
             </div>
-            <div class="sevice_info-img">
+            <div class="sevice_info-img wow animate__animated animate__rotateIn">
                 <img src="images_hvacwebpages/hvac_services.jpg" alt="info">
             </div>
         </div>
         <div class="second_service_section">
-            <div class="service_overview_image">
-                <img src="images_hvacwebpages/rooftoop_service.jpg"
-                    alt="img-sec">
+            <div class="service_overview_image wow animate__animated animate__rollIn">
+                <img src="images_hvacwebpages/rooftoop_service.jpg"alt="img-sec">
             </div>
             <div class="sevice_overview_section">
-                <h1 class="service_info-title">HVAC Services and Their
+                <h1 class="service_info-title wow animate__animated animate__fadeInDownBig">HVAC Services and Their
                     Importance</h1>
-                <div class="service_paragraph"><p>HVAC (Heating, Ventilation,
+                <div class="service_paragraph wow animate__animated animate__fadeInRightBig"><p>HVAC (Heating, Ventilation,
                         and Air Conditioning) Services
                         refer to a range of services that help regulate indoor
                         environmental conditions, including
@@ -152,9 +154,9 @@
         </div>
         <div class="third_service_section_container">
             <div class="third_service_section">
-                <h1 class="service_info-title">Expert HVAC Services for
+                <h1 class="service_info-title wow animate__animated animate__backInDown">Expert HVAC Services for
                     Buildings</h1>
-                <div class="third_service_paragraph">
+                <div class="third_service_paragraph wow animate__animated animate__backInLeft">
                     <p>Overall, <span>HVAC repair services </span>are essential
                         for ensuring that buildings have
                         comfortable, safe, and healthy indoor environments.
@@ -179,9 +181,9 @@
                         retail stores, supermarkets,
                         and more.</p>
                 </div>
-                <h1 class="service_info-title">How Often Should You Have New Air
+                <h1 class="service_info-title wow animate__animated animate__backInDown">How Often Should You Have New Air
                     Conditioner Equipment Installed?</h1>
-                <div class="third_service_paragraph">
+                <div class="third_service_paragraph wow animate__animated animate__backInRight">
                     <p>The short answer to how often you should replace your air
                         conditioner is 10 years.
                         After about 10 years, your air conditioning starts
@@ -195,9 +197,9 @@
                         space and discuss additional features like smart
                         controls.</p>
                 </div>
-                <h1 class="service_info-title">Get More Air Conditioning and
+                <h1 class="service_info-title wow animate__animated animate__backInDown">Get More Air Conditioning and
                     Heating</h1>
-                <div class="third_service_paragraph">
+                <div class="third_service_paragraph wow animate__animated animate__backInLeft">
                     <p>Our business is more than your average<span> local air
                             conditioner service company.</span>
                         Our experience has made us experts in handling all your
@@ -220,45 +222,32 @@
         </div>
         <div class="outer_most_happy_customer_container">
             <div class="happy_customer_outer_container">
-                <div class="feedback_container">
-                    <h1 class="feedback_content">the feedback</h1>
-                </div>
                 <div class="heading_happy_customer">
-                    <h1 class="happy_customer_title"> Hear From Our Happy
-                        Customers</h1>
+                    <h1 class="happy_customer_title"> Hear From Our Happy Customers</h1>
                 </div>
                 <div class="feedback_quama">
                     <i class="fa-solid fa-quote-right"></i>
                 </div>
                 <div class="info_container">
-                    <h1 class="feedback_info">Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Soluta totam sint vero
-                        odit veritatis nisi facilis nemo quos! Culpa distinctio
-                        a similique explicabo suscipit eum perspiciatis quasi
-                        quisquam voluptas ratione?</h1>
+                    <h1 class="feedback_info" id="feedback-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta totam sint vero odit veritatis nisi facilis nemo quos! Culpa distinctio a similique explicabo suscipit eum perspiciatis quasi quisquam voluptas ratione?</h1>
                 </div>
                 <div class="name_container">
-                    <h1 class="feedbacker_name">rachel brown</h1>
-                    <h1 class="feedback_client">client</h1>
+                    <h1 class="feedbacker_name" id="feedback-name">Rachel Brown</h1>
+                    <h1 class="feedback_client" id="feedback-client">Client</h1>
                 </div>
                 <div class="client_images">
                     <div class="client1">
-                        <img src="images_hvacwebpages/client_image.jpg"
-                            alt="client1">
-                    </div>
-                    <div class="client2">
-                        <img src="images_hvacwebpages/client_image1.jpg"
-                            alt="client2">
-                    </div>
-                    <div class="client3">
-                        <img src="images_hvacwebpages/client_image2.jpg"
-                            alt="client3">
+                        <img src="images_hvacwebpages/client_image.jpg" alt="client1" id="client-img">
                     </div>
                 </div>
-
+    
+                <!-- Carousel Buttons -->
+                <button class="carousel-btn prev-btn" onclick="prevFeedback()">&#10094;</button>
+                <button class="carousel-btn next-btn" onclick="nextFeedback()">&#10095;</button>
+    
             </div>
         </div>
-        <div class="faq-container">
+        <div class="faq-container wow animate__animated animate__zoomInDown animate__delay-5S">
             <h2 class="h2-text-erp-case h2-text-faq-case">Frequently Asked
                 Questions</h2>
             <div class="faq-item">
@@ -333,7 +322,7 @@
                     <h2>Contact Us</h2>
                 </div>
             </div>
-            <div class="first_contact_now_container">
+            <div class="first_contact_now_container wow animate__animated animate__rollIn animate__delay-5S">
                 <div class="contact_info_container">
                     <div class="heading_contact_now">
                         <h4>Contact Now</h4>
@@ -507,6 +496,76 @@ menuToggle.addEventListener('click', () => {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+</script>
+<script>
+    new WOW().init();
+</script>
+<script>
+    // JavaScript to highlight the active navigation link
+const currentPage = location.pathname.split("/").pop();
+const navLinks = document.querySelectorAll(".nav-list-ul ul a");
+
+navLinks.forEach(link => {
+if (link.getAttribute("href") === currentPage) {
+    link.classList.add("active");
+}
+});
+</script>
+<script>
+    const feedbacks = [
+        {
+            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta totam sint vero odit veritatis nisi facilis nemo quos!",
+            name: "Rachel Brown",
+            client: "Client",
+            image: "images_hvacwebpages/client_image.jpg"
+        },
+        {
+            text: "We had an amazing experience with the team, they went above and beyond to meet our expectations.",
+            name: "John Doe",
+            client: "Customer",
+            image: "images_hvacwebpages/client_image1.jpg"
+        },
+        {
+            text: "Their professionalism is top-notch. I couldn't have asked for a better service!",
+            name: "Emily White",
+            client: "Client",
+            image: "images_hvacwebpages/client_image2.jpg"
+        },
+        {
+            text: "Highly recommend their services! They truly care about customer satisfaction.",
+            name: "Michael Smith",
+            client: "Customer",
+            image: "images_hvacwebpages/client_image2.jpg"
+        }
+    ];
+
+    let currentFeedback = 0;
+
+    function updateFeedback() {
+        const feedbackText = document.getElementById('feedback-text');
+        const feedbackName = document.getElementById('feedback-name');
+        const feedbackClient = document.getElementById('feedback-client');
+        const clientImage = document.getElementById('client-img');
+
+        feedbackText.textContent = feedbacks[currentFeedback].text;
+        feedbackName.textContent = feedbacks[currentFeedback].name;
+        feedbackClient.textContent = feedbacks[currentFeedback].client;
+        clientImage.src = feedbacks[currentFeedback].image;
+    }
+
+    function nextFeedback() {
+        currentFeedback = (currentFeedback + 1) % feedbacks.length;
+        updateFeedback();
+    }
+
+    function prevFeedback() {
+        currentFeedback = (currentFeedback - 1 + feedbacks.length) % feedbacks.length;
+        updateFeedback();
+    }
+
+    // Auto-slide every 5 seconds
+    setInterval(nextFeedback, 5000);
+
 </script>
     </body>
 </html>
