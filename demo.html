@@ -3,109 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Dropdown</title>
+    <title>Download Technical Documents</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
+            margin: 20px;
         }
 
-        .nav-menu-list {
-            background-color: #333;
-            padding: 10px 0;
+        .broucher_inner_container {
+            text-align: center;
         }
 
-        .menu-list {
+        .broucher_main_heading h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .broucher_box_container {
             display: flex;
             justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
         }
 
-        .nav-list-ul ul {
-            list-style-type: none;
-            display: flex;
-        }
-        ul.submenu {
-         display: none;
-        }
-
-        .nav-list-ul ul li {
+        .broucher_pdf_box, .broucher_pdf_box2, .broucher_pdf_box3 {
             position: relative;
-            margin: 0 20px;
+            width: 250px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
         }
 
-        .nav-list-ul ul li a, .submenu-span-in {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            padding: 10px 15px;
-            display: block;
-            transition: background-color 0.3s ease;
+        /* Image styling */
+        .broucher_pdf_box img, .broucher_pdf_box2 img, .broucher_pdf_box3 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: opacity 0.3s ease, transform 0.3s ease;
         }
 
-        .nav-list-ul ul li a:hover, .submenu-span-in:hover {
-            background-color: #575757;
+        /* Hover effect */
+        .broucher_pdf_box:hover img, .broucher_pdf_box2:hover img, .broucher_pdf_box3:hover img {
+            transform: scale(1.05);
         }
 
-        /* Dropdown menu styles */
-        .submenu {
-            display: none;
+        /* Caption Styling */
+        .broucher_pdf_box h3, .broucher_pdf_box2 h3, .broucher_pdf_box3 h3 {
             position: absolute;
-            background-color: #333;
-            top: 100%;
+            bottom: 0;
             left: 0;
-            width: 180px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .submenu li {
-            display: block;
-        }
-
-        .submenu li a {
+            right: 0;
             padding: 10px;
-            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+            margin: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
         }
 
-        .submenu li a:hover {
-            background-color: #575757;
+        /* Modal styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
         }
 
-        /* Show the submenu when hovering over the product link */
-        .has-submenu:hover .submenu {
+        .modal-content {
+            margin: 10% auto;
             display: block;
+            width: 80%;
+            max-width: 700px;
+            border-radius: 10px;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-    <div class="nav-menu-list">
-        <div class="menu-list">
-            <nav class="nav-list-ul">
-                <ul class="nav-list">
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li class="has-submenu">
-                        <a href="about.html" class="submenu-span-in">PRODUCT</a>
-                        <ul class="submenu">
-                            <li><a href="odoo_cloud.html">Oddo/Cloud ERP</a></li>
-                            <li><a href="task_trak.html">TaskTrak Hub</a></li>
-                            <li><a href="hvac_task.html">HVAC Task Manager</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="research.html">RESEARCH</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="career.html">CAREER</a></li>
-                    <li><a href="blogs.html">BLOGS</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                </ul>
-            </nav>
+<div class="broucher_inner_container">
+    <div class="broucher_main_heading">
+        <h3>Download Technical Documents</h3>
+    </div>
+
+    <div class="broucher_box_container">
+        <div class="broucher_pdf_box">
+            <img src="images_hvacwebpages/download_image.jpg" alt="Efficiency Chart" onclick="openModal(this)">
+            <h3>Efficiency Chart</h3>
+        </div>
+        <div class="broucher_pdf_box2">
+            <img src="images_hvacwebpages/download_image1.jpg" alt="Pressure Drop Across Pipe Fittings Valves" onclick="openModal(this)">
+            <h3>Pressure Drop Across Pipe Fittings Valves</h3>
+        </div>
+        <div class="broucher_pdf_box3">
+            <img src="images_hvacwebpages/download_image2.jpg" alt="Pressure Drop Across Valves" onclick="openModal(this)">
+            <h3>Pressure Drop Across Valves</h3>
         </div>
     </div>
+
+    <div class="broucher_box_container">
+        <div class="broucher_pdf_box">
+            <img src="images_hvacwebpages/download_image3.jpg" alt="Psychrometric Chart" onclick="openModal(this)">
+            <h3>Psychrometric Chart</h3>
+        </div>
+        <div class="broucher_pdf_box2">
+            <img src="images_hvacwebpages/download_image4.jpg" alt="Psychrometric Formulae" onclick="openModal(this)">
+            <h3>Psychrometric Formulae</h3>
+        </div>
+        <div class="broucher_pdf_box3">
+            <img src="images_hvacwebpages/download_image5.jpg" alt="Weather Data" onclick="openModal(this)">
+            <h3>Weather Data</h3>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for expanded image -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="imgModal">
+</div>
+
+<script>
+    // Function to open the modal and show the clicked image
+    function openModal(image) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("imgModal");
+        modal.style.display = "block";
+        modalImg.src = image.src;
+    }
+
+    // Function to close the modal
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+</script>
 
 </body>
 </html>

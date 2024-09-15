@@ -11,18 +11,35 @@
 }
 .nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 p.map {
     width: 7%;
     padding: 10px;
 }
+p.map a {
+    text-decoration: none;
+    color: white;
+}
 p.phone {
     width: 15%;
     padding: 10px;
 }
+p.phone a {
+    text-decoration: none;
+    color: white;
+}
+p.envelope a {
+    text-decoration: none;
+    color: white;
+}
 p.envelope {
     width: 17%;
     padding: 10px;
+}
+.social a {
+    color: white;
 }
 .social {
     width: 57%;
@@ -106,7 +123,16 @@ ul.submenu {
     display: block;
     transition: background-color 0.3s ease;
 }
-
+.footer_social a {
+    color: white;
+}
+.footer_list a {
+    text-decoration: none;
+    color: white;
+}
+.message_chat_box a {
+    color: white;
+}
 /* Dropdown menu styles */
 .submenu {
     display: none;
@@ -134,16 +160,59 @@ li.inline-block a.active {
     display: block;
 }
 .request_btn {
+    padding: 10px 10px;
+    background-color: #007bff;
     color: white;
-    background-color: #efa23f;
-    height: 50px;
-    width: 160px;
     border: none;
-    font-size: 17px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.nav_btn {
-    display: flex;
-    align-items: center;
+
+.request_btn:hover {
+    background-color: #0056b3;
+}
+
+/* Hidden by default */
+.order_form {
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order_form input, .order_form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.order_form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.submit_btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit_btn:hover {
+    background-color: #218838;
 }
 .header_image1 img {
     width: 100%;
@@ -1333,50 +1402,138 @@ h1.feedback_client {
     margin-top: 25px;
     margin-left: 10px;
 }
-.broucher_pdf_box img{
-    width: 200px;
-    margin-bottom: 10px;
+.broucher_pdf_box img, .broucher_pdf_box2 img {
+    width: 240px;
+    object-fit: cover;
+    border-radius: 5px;
 }
-.broucher_pdf_box2 img{
-    width: 200px;
-    margin-bottom: 10px;
+.broucher_main_heading h3 {
+    padding: 30px;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
-.broucher_pdf_box {
+.broucher_pdf_box, .broucher_pdf_box2,.broucher_pdf_box3  {
     width: 33%;
+    position: relative;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+/* Image styling */
+.broucher_pdf_box img, .broucher_pdf_box2 img, .broucher_pdf_box3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover effect to make image transparent */
+.broucher_pdf_box:hover img, .broucher_pdf_box2:hover img {
+    opacity: 0.5; /* Transparent on hover */
+}
+
+/* Hidden buttons by default */
+.hover-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-buttons button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hover-buttons button i {
+    pointer-events: none; /* Ensures only button clicks are counted */
+}
+
+.hover-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Show buttons on hover */
+.broucher_pdf_box:hover .hover-buttons,
+.broucher_pdf_box2:hover .hover-buttons {
+    opacity: 1;
+}
+
+/* Caption Styling */
+.broucher_pdf_box h3, .broucher_pdf_box2 h3, .broucher_pdf_box3 h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+ /* Hover effect */
+ .broucher_pdf_box:hover img, .broucher_pdf_box2:hover img, .broucher_pdf_box3:hover img {
+    transform: scale(1.05);
 }
 .broucher_box_container {
     display: flex;
-    margin: 10px 190px;
+    gap: 50px;
+    justify-content: center;
 }
-.broucher_main_heading h3 {
+.broucher_inner_container {
     text-align: center;
-    padding-bottom: 20px;
-    color: #3a3c92;
+}
+ /* Modal styling */
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: 10% auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
     font-weight: bold;
-    text-transform: uppercase;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 1.2;
-    margin-top: 90px;
+    cursor: pointer;
 }
-.broucher_pdf_box h3 {
-    font-weight: 600 !important;
-    margin-left: 20px;
-}
-.broucher_pdf_box2 h3 {
-    /* font-size: 17px; */
-    font-weight: 600 !important;
-    margin-left: 20px;
-}
-.broucher_pdf_box2 {
-    width: 33%;
-}
-.broucher_pdf_box3 img{
-    width: 200px;
-    margin-bottom: 10px;
-}
-.broucher_pdf_box3 {
-    width: 34%;
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 .video-container {
     text-align: center;
@@ -1808,7 +1965,24 @@ h2.heading_discription {
     margin-bottom: 15px;
     position: relative;
 }
-
+.chats_section {
+    position: fixed;
+    top: 70%;
+    right: 40px;
+    display: flex;
+}
+.message_chat_box {
+    font-size: 20px;
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+    color: white;
+    background-color: #39a717;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
  
 
 /*............................................Media queries.....................................*/
@@ -2303,6 +2477,60 @@ h2.heading_discription {
         padding: 10px;
         width: 100%;
     }
+      /* Modal styling */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .modal-content {
+        margin: 10% auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        border-radius: 10px;
+        padding-top: 30px;
+    }
+
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+       /* Hover effect to make image transparent */
+.broucher_pdf_box:hover img, .broucher_pdf_box2:hover img {
+    opacity: 0.5; /* Transparent on hover */
+}
+
+/* Hidden buttons by default */
+.hover-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
     h4.career_name {
         font-size: 10px;
         margin-right: 5px;

@@ -14,26 +14,23 @@
         <div class="main-navbar">
             <div class="container">
                 <div class="nav">
-                    <p class="map">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Nashik
+                    <p class="map"><i class="fa-solid fa-location-dot"></i>
+                        <a href="https://www.google.com/maps/place/Leal+Software+solution+Pvt+Ltd/@19.9533814,73.8352421,17z/data=!3m1!4b1!4m6!3m5!1s0x3bdd95569ec07e45:0xaf95606646da2ccc!8m2!3d19.9533764!4d73.837817!16s%2Fg%2F11bbrhz72j?entry=ttu&g_ep=EgoyMDI0MDkxMC4wIKXMDSoASAFQAw%3D%3D">Nashik</a>
                     </p>
-                    <p class="envelope">
-                        <i class="fa-regular fa-envelope-open"></i>
-                        email@example.com
+                    <p class="envelope"><i class="fa-regular fa-envelope-open"></i>
+                        <a href="mailto:email@example.com"> email@example.com</a>
                     </p>
-                    <p class="phone">
-                        <i class="fa fa-phone call-icon"></i>
-                        +1234567890
+                   <p class="phone"><i class="fa fa-phone call-icon"></i>
+                    <a href="tel:+1234567890">+1234567890</a>
                     </p>
-
-                    <div class="social">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
+                   
+                        <div class="social">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
                 </div>
             </div>
         </div>
@@ -42,8 +39,9 @@
                 <div class="nav">
                     <div class="image-container">
                         <div class="logo-image">
-                            <img src="images_hvacwebpages/top_logo.jpg"
-                                alt="logo">
+                            <a href="home.html">
+                                <img src="images_hvacwebpages/top_logo.jpg" alt="logo">
+                            </a>
                         </div>
                     </div>
                     <div class="nav-menu-list">
@@ -71,7 +69,7 @@
                         </div>
                     </div> 
                     <div class="nav_btn">
-                        <button class="request_btn">Order service</button>
+                        <button class="request_btn" onclick="showForm()">Order Service</button>
                     </div>
                 </div>
             </div>
@@ -394,29 +392,30 @@
                 </div>
                 <div class="footer_list">
                     <ul>
-                        <li class="ending_list">Home</li>
-                        <li class="ending_list">About</li>
-                        <li class="ending_list">Service</li>
-                        <li class="ending_list">Blog</li>
-                        <li class="ending_list">Downloads</li>
-                        <li class="ending_list">Contact</li>
+                        <a href="home.html"><li class="ending_list">Home</li></a>
+                        <a href="about.html"><li class="ending_list">About</li></a>
+                        <a href="service.html"><li class="ending_list">Service</li></a>
+                        <a href="blog.html"><li class="ending_list">Blog</li></a>
+                        <a href="downloads.html"><li class="ending_list">Downloads</li></a>
+                        <a href="career.html"><li class="ending_list">Career</li></a>
+                        <a href="contact.html"><li class="ending_list">Contact</li></a>
                     </ul>
                 </div>
                 <div class="footer_social">
                     <div class="footer_icon">
-                        <i class="fa-brands fa-facebook"></i>
-                    </div>
-                    <div class="footer_icon2">
-                        <i class="fa-brands fa-twitter"></i>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="footer_icon2">
+                    <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                     <div class="footer_icon3">
-                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <div class="footer_icon4">
-                        <i class="fa-brands fa-youtube"></i>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                     <div class="footer_icon5">
-                        <i class="fa-brands fa-instagram"></i>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
                 <hr>
@@ -427,6 +426,11 @@
             <button onclick="topFunction()" id="top_myBtn" title="Go to top"><i
                     class="fa fa-arrow-up" aria-hidden="true"></i></button>
 
+        </div>
+        <div class="chats_section">
+            <div class="message_chat_box">
+                <a href="tel:+1234567890"><i class="fa-solid fa-phone"></i></a>
+                    </div>
         </div>
         <menunav>
             <div class="menu-toggle" id="mobile-menu">
@@ -566,6 +570,11 @@ if (link.getAttribute("href") === currentPage) {
     // Auto-slide every 5 seconds
     setInterval(nextFeedback, 5000);
 
+</script>
+<script>
+    function showForm() {
+        window.open("orderservice.html", "_blank", "width=600,height=600");
+    }
 </script>
     </body>
 </html>

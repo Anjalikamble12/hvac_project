@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Service Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+</head>
+  
+<body>
+
+
+
+<!-- Order Service Form -->
+<div class="order_form" id="orderForm">
+    <h3>Order Service Form</h3>
+    
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Enter your full name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <label for="contact">Contact No</label>
+    <input type="tel" id="contact" placeholder="Enter your contact number" required>
+
+    <label for="service">Service Type</label>
+    <select id="service">
+        <option value="">Select a service</option>
+        <option value="air_conditioning">Air Conditioning</option>
+        <option value="heating">Heating</option>
+        <option value="hvac">HVAC</option>
+        <option value="ac_installation">AC Installation</option>
+        <option value="indoor_air_quality">Indoor Air Quality</option>
+    </select>
+
+    <label for="location">Location</label>
+    <input type="text" id="location" placeholder="Enter your location" required>
+
+    <button class="submit_btn" onclick="submitForm()">Submit</button>
+</div>
+
+<script>
+    // Function to display the form
+    function submitForm() {
+            window.open("orderservice.html", "_blank", "width=600,height=600");
+        }
+
+</script>
+
+</body>
+</html>
