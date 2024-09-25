@@ -77,55 +77,73 @@
 </div>  
 </div>
 <div class="header_image_container">
-<div class="header_image1">
-    <img src="images_hvacwebpages/header.jpg" alt="header_image">
-</div>
-<div class="top_header_slider wow animate__animated animate__backInRight animate__delay-1S">
-    <div class="slider_container">
-        <div class="slider_heading">keeping your home comfortable all year long</div>
-        <div class="slider_content">that air conditioning system regularly maintained</div>
-        <div class="slider_btn">
-            <button class="contact_btn"><a href="contact.html">Contact Us</a></button>
-        </div>
+    <!-- Header Image -->
+    <div class="header_image1">
+      <img src="images_hvacwebpages/slider1-1homepage.jpg" alt="header_image" id="headerImage">
     </div>
-</div>
-<div class="benifit">
+  
+    <!-- Previous Arrow -->
+    <button class="slick-prev slick-arrow" onclick="showPrevImage()">
+      <i class="fas fa-chevron-left"></i> <!-- Left arrow icon -->
+    </button>
+  
+    <!-- Next Arrow -->
+    <button class="slick-next slick-arrow" onclick="showNextImage()">
+      <i class="fas fa-chevron-right"></i> <!-- Right arrow icon -->
+    </button>
+
+    <!-- Slider Content -->
+  <div class="top_header_slider wow animate__animated animate__backInRight animate__delay-1S">
+    <div class="services-section">
+        <p>WELCOME TO ARIA CLIMATE TECHNIQUE</p>
+        <h1>Best Home Services <br> Repairer Offers</h1>
+        <p>Have a service issue? Call 24 hours emergency services all the time.</p>
+        
+        <!-- Phone number section -->
+        <div class="phone-number">
+          <i class="fas fa-phone-alt"></i>
+          <span>123 456 7890</span>
+        </div>
+        
+        <!-- Buttons section -->
+        <div class="buttons-container">
+          <button class="btn btn-get-started">Get Started</button>
+          <button class="btn btn-contact-us">Contact Us</button>
+        </div>
+      </div>
+  </div>
+  
+  <!-- Benefit Section -->
+  <div class="benifit">
     <div class="benifit_container">
-        <div class="benifit_image_container1">
+      <div class="benifit_image_container1">
         <img src="images_hvacwebpages/benifit-1.jpg" alt="benifit-1">
         <h4>No Upfront Payments</h4>
-    </div>
-    <div class="benifit_image_container1">
+      </div>
+      <div class="benifit_image_container1">
         <img src="images_hvacwebpages/benifit-2.jpg" alt="benifit-2">
         <h4>Satisfaction Guarantee</h4>
-    </div>
-    <div class="benifit_image_container1">
+      </div>
+      <div class="benifit_image_container1">
         <img src="images_hvacwebpages/benifit-3.jpg" alt="benifit-3">
         <h4>Emergency Service</h4>
-    </div>
-    <div class="benifit_image_container1">
+      </div>
+      <div class="benifit_image_container1">
         <img src="images_hvacwebpages/benifit-4.jpg" alt="benifit-4">
         <h4>8 Years Experience</h4>
+      </div>
     </div>
-    </div>
+  </div>
 </div>
-</div>
+
 <div class="about_us_outer_container">
     <div class="about_us_middle_container">
         <div class="right_side_container wow animate__animated animate__rollIn animate__delay-2S">
-            <div class="about_us_heading">About <span class="blue">us</span></div>
-            <div class="about_us_paragraph">"HVAC" redirects here. The term may also refer to high-voltage alternating current.
-                Rooftop HVAC unit with view of fresh-air intake vent Ventilation duct with outlet diffuser vent. These are installed 
-                throughout a building to move air in or out of rooms. In the middle is a damper to open and close the vent to allow
-                more or less air to enter the space.<br>
-                The control circuit in a household HVAC installation. The wires connecting to the blue terminal block on the upper-right
-                of the board lead to the thermostat. The fan enclosure is directly behind the board, and the filters can be seen at the top. 
-                The safety interlock switch is at the bottom left. In the lower middle is the capacitor.Heating, ventilation, and air 
-                conditioning (HVAC)[1] is the use of various technologies to control the temperature, humidity, and purity of the air in an 
-                enclosed space. 
+            <div class="about_us_heading">Welcome <span class="blue">Aria Climate Technique</span></div>
+            <div class="about_us_paragraph">At Aria Climate Technique, we are dedicated to providing top-tier HVAC&R solutions that ensure optimal comfort and efficiency for our clients. With years of industry experience, our team of experts is committed to delivering innovative, reliable, and energy-efficient systems tailored to meet the unique needs of each project.
                 </div>
-                <div class="view_more_btn">
-                    <button class="v_m_btn"><a href="about.html">View more</a></button>
+                <div class="about_us_heading">Who We Are</div>
+                <div class="about_us_paragraph">Founded by a group of passionate professionals, Aria Climate Technique brings together a wealth of knowledge in the field of heating, ventilation, air conditioning, and refrigeration. Our mission is to enhance indoor environments across various sectors, including industrial, commercial, healthcare, and more.
                 </div>
         </div>
         <div class="left_side_container">
@@ -167,11 +185,18 @@
 <div class="services_container">
     <div class="outer_services_comtainer">
         <div class="Rightside_services_container wow animate__animated animate__fadeInDownBig animate__delay-1S">
-            <div class="services_heading">our services</div>
-            <div class="sevices_big_heading">Quality Work Every Time</div>
-            <div class="services_paragraph">Pellentesque vel nunc pellentesque, tincidunt velit et, tristique odio. 
-                Donec malesuada massa in placerat dictum. Mauris pulvinar, justo id venenatis placerat.
+            <!-- <div class="services_heading">our services</div> -->
+            <div class="about_us_heading">our <span class="blue">services</span></div>
+            <div class="services_paragraph">At Aria Climate Technique, we offer a comprehensive suite of HVAC&R services designed to meet the diverse needs of our clients. Our expertise spans across various sectors, ensuring that we deliver tailored solutions that enhance comfort, efficiency, and sustainability.
             </div>
+            <ul class="service-list">
+                <li><i class="fas fa-chevron-right"></i> Design and Installation</li>
+                <li><i class="fas fa-chevron-right"></i> Energy Optimization</li>
+                <li><i class="fas fa-chevron-right"></i> Process Cooling Solutions</li>
+                <li><i class="fas fa-chevron-right"></i> Clean Room Environments</li>
+                <li><i class="fas fa-chevron-right"></i> Commercial Solutions</li>
+                <li><i class="fas fa-chevron-right"></i> Maintenance and Support</li>
+              </ul>
         </div>
         <div class="Leftside_services_container wow animate__animated animate__fadeInRightBig animate__delay-1S">
             <div class="leftside_image_container">
@@ -449,132 +474,52 @@
 </div>
 </div>
 </div>
-<div class="outer_solution_container">
-    <div class="inner_director_container">
-        <div class="heading_solution_container">
-            <div class="heading_solution">Our Directors</div>
-        </div>
-        <div class="paragraph_container_outer">
-        <div class="paragraph_container_inner_side">
-            <div class="solution_iamge">
-                <img src="images_hvacwebpages/Picture.jpg.png" alt="solution_iamge">
+
+<section class="team-section">
+    <h2>Our Motivated Skilled Experience Team</h2>
+    <p>Meet the professionals who make everything possible</p>
+    <a href="#" class="all-team-btn">All Team Member</a>
+
+    <!-- Team Members Grid -->
+    <div class="team-grid">
+        <div class="team-member">
+            <div class="team_image-container">
+                <img src="images_hvacwebpages/Picture.jpg.png" alt="Team Member 1">
             </div>
-            <div class="director_heading">Mr.subodh murkewar</div>
-            <div class="director_caption">Managing Director</div>
-            <div class="director_paragrapg">Mr. Subodh Murkewar has over 30 years of experience 
-                in the engineering industry. He had worked with Thermax Ltd before starting 
-                this business.<br>
-                Under his leadership, Hvac systems has grown steadily and received various awards
-                and accolades, he formed HVAC Systems India Private Limited in 1997, 
-                initiating its operations as TSF (Thermax Service Franchisee) and has taken 
-                several initiatives to accelerate the company's top-line and bottom-line growth.
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officiis quos quam 
-                blanditiis, deserunt nam animi atque placeat aut ea sunt est aspernatur obcaecati et
-                 itaque cum dolore officia! Temporibus!
+            <h3>John Doe</h3>
+            <p>Lead Engineer</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
-        <div class="paragraph_container_inner_side">
-            <div class="solution_iamge">
-                <img src="images_hvacwebpages/director_image.jpg" alt="solution_iamge">
+        <div class="team-member">
+            <div class="team_image-container">
+                <img src="images_hvacwebpages/Picture2.png" alt="Team Member 2">
             </div>
-            <div class="director_heading">Ms.saloni surwe</div>
-            <div class="director_caption">Director – Operations</div>
-            <div class="director_paragrapg">Ms.saloni surwe has over 30 years of experience 
-                in the engineering industry. He had worked with Thermax Ltd before starting 
-                this business.<br>
-                Under his leadership, Hvac systems has grown steadily and received various awards
-                and accolades, he formed HVAC Systems India Private Limited in 1997, 
-                initiating its operations as TSF (Thermax Service Franchisee) and has taken 
-                several initiatives to accelerate the company's top-line and bottom-line growth.
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officiis quos quam 
-                blanditiis, deserunt nam animi atque placeat aut ea sunt est aspernatur obcaecati et
-                 itaque cum dolore officia! Temporibus!
+            <h3>Michael Smith</h3>
+            <p>Senior Technician</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
-        <div class="paragraph_container_inner_side">
-            <div class="solution_iamge">
-                <img src="images_hvacwebpages/director_image2.jpg" alt="solution_iamge">
+        <div class="team-member">
+            <div class="team_image-container">
+                <img src="images_hvacwebpages/picture3.png" alt="Team Member 3">
             </div>
-            <div class="director_heading">Mr.satyawan jain</div>
-            <div class="director_caption">Director – FEVC</div>
-            <div class="director_paragrapg">Mr. Satyawan jain has over 30 years of experience 
-                in the engineering industry. He had worked with Thermax Ltd before starting 
-                this business.<br>
-                Under his leadership, Hvac systems has grown steadily and received various awards
-                and accolades, he formed HVAC Systems India Private Limited in 1997, 
-                initiating its operations as TSF (Thermax Service Franchisee) and has taken 
-                several initiatives to accelerate the company's top-line and bottom-line growth.
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officiis quos quam 
-                blanditiis, deserunt nam animi atque placeat aut ea sunt est aspernatur obcaecati et
-                 itaque cum dolore officia! Temporibus!
+            <h3>David Wilson</h3>
+            <p>Project Manager</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-        </div>
         </div>
     </div>
-</div>
-<div class="outer_blog_container">
-    <div class="inner_director_container">
-        <div class="heading_solution_container">
-            <div class="heading_solution">Recent Blog</div>
-        </div>
-        <div class="paragraph_container_outer">
-        <div class="paragraph_container_inner_side">
-            <div class="solution_iamge">
-                <img src="images_hvacwebpages/blog_image.jpg" alt="solution_iamge">
-            </div>
-            <div class="blog_heading">Heat Pumps: Basics Of Energy Efficient
-                 Solutions For Heating Needs!</div>
-            <div class="director_paragrapg">With the world enduring the effects of
-                 Environmental pollutions, many eco-friendly and sustainable ideas 
-                 have surfaced to tackle these issues. Ban on single use plastics, 
-                 Electric vehicles, power generation using renewable sources are some of those..
-            </div>
-            <div class="button_container">
-                <div class="read_more_btn">
-                    <button class="v_m_btn"><a href="blog.html">Read more</a></button>
-                </div>
-            </div>
-        </div>
-        <div class="paragraph_container_inner_side">
-            <div class="solution_iamge">
-                <img src="images_hvacwebpages/blog_image.1jpg.jpg" alt="solution_iamge">
-            </div>
-            <div class="blog_heading">Cooling Challenges In Data Centers: HVAC Solutions
-            </div>
-            <div class="director_paragrapg">In today's data-driven world, data centers play 
-                a critical role in storing and processing vast amounts of information.
-                 As the demand for data storage and processing continues to grow, 
-                 data centers are expanding rapidly. However, with this growth comes
-                  the challenge of efficiently
-            </div>
-            <div class="button_container">
-                <div class="read_more_btn">
-                    <button class="v_m_btn"><a href="blog.html">Read more</a></button>
-                </div>
-            </div>
-        </div>
-        <div class="paragraph_container_inner_side">
-            <div class="solution_iamge">
-                <img src="images_hvacwebpages/blog_image2.jpg" alt="solution_iamge">
-            </div>
-            <div class="blog_heading">Optimizing HVAC Systems For Dehumidification In The Food Industry</div>
-            <div class="director_paragrapg">In the food industry, maintaining optimal moisture 
-                levels is crucial for product quality, safety, and shelf life. HVAC (Heating, 
-                Ventilation, and Air Conditioning) systems play a vital role in dehumidification
-                 by controlling humidity levels in..
-            </div>
-            <div class="button_container">
-            <div class="read_more_btn">
-                <button class="v_m_btn"><a href="blog.html">Read more</a></button>
-            </div>
-        </div>
-        </div>
-        </div>
-    </div>
-</div>
+</section>
 <div class="outer_offer_container">
     <div class="offer_service_container">
 
@@ -924,6 +869,28 @@ navLinks.forEach(link => {
             window.open("orderservice.html", "_blank", "width=600,height=600");
         }
     </script>
+    <!-- JavaScript to handle image switching -->
+<script>
+    // Array of image sources
+    const images = [
+      'images_hvacwebpages/slider1-1homepage.jpg',      // First image
+      'images_hvacwebpages/slider2homepage.jpg'      // Second image (Add your second image here)
+    ];
+  
+    let currentImageIndex = 0;
+  
+    // Function to show the previous image
+    function showPrevImage() {
+      currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
+      document.getElementById('headerImage').src = images[currentImageIndex];
+    }
+  
+    // Function to show the next image
+    function showNextImage() {
+      currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
+      document.getElementById('headerImage').src = images[currentImageIndex];
+    }
+  </script>
 
 </body>
 </html>

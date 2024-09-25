@@ -61,7 +61,7 @@ i.fa-brands.fa-instagram {
     margin: 10px;
 }
 .main-navbar {
-    background-color: #0f2765;
+    background-color: #f8b400;
     color: white;
     font-size: 17px;
 }
@@ -161,7 +161,7 @@ li.inline-block a.active {
 }
 .request_btn {
     padding: 10px 10px;
-    background-color: #007bff;
+    background-color: #f8b400;
     color: white;
     border: none;
     border-radius: 5px;
@@ -214,18 +214,14 @@ li.inline-block a.active {
 .submit_btn:hover {
     background-color: #218838;
 }
-.header_image1 img {
-    width: 100%;
-    opacity: 0.7;
-}
 .header_image_container {
     position: relative;
 }
 .top_header_slider {
     position: absolute;
-    top: 173px;
-    background-color: white;
-    left: 45px;
+    top: 20%;
+    /* background-color: white; */
+    left: 180px;
 }
 .slider_container {
     padding: 45px 37px 60px;
@@ -261,9 +257,16 @@ li.inline-block a.active {
     display: flex;
     margin-left: 90px;
 }
+/* .benifit_image_container1:hover {
+    background-image: url(../images_hvacwebpages/slider1-1homepage.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+} */
 .benifit {
     position: absolute;
-    bottom: -90px;
+    bottom: -100px;
 }
 .benifit_image_container1 h4 {
     font-size: 20px;
@@ -289,7 +292,7 @@ li.inline-block a.active {
 }
 .right_side_container {
     width: 40%;
-    padding: 10px;
+    padding: 30px 10px;
 }
 .left_side_container {
     width: 50%;
@@ -450,14 +453,158 @@ p.benifit-paragraph {
     justify-content: center;
     align-items: center;
     /* position: relative; */
-    position: absolute;
-    top: 299px;
 }
 .services_caption {
     padding: 10px 0;
     color: #333;
     font-weight: bold;
 }
+.service-list {
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+    /* List item styling */
+    .service-list li {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      padding: 10px 0;
+      color: #333;
+    }
+
+    /* Chevron icon styling */
+    .service-list li i {
+      margin-right: 10px;
+      color: orange; /* Set chevron icon color */
+    }
+
+    /* Hover effect for list items */
+    .service-list li:hover {
+      color: rgb(64, 0, 255); /* Change text color on hover */
+    }
+  
+        /* Team Section Styling */
+        .team-section {
+            background: linear-gradient(to bottom, rgb(194 116 27), rgba(0, 0, 0, 0.7)), 
+            url(../images_hvacwebpages/valueproposition.jpg) no-repeat center center / cover;
+            padding: 80px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .team-section h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .team-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .team-section .all-team-btn {
+            background-color: #ff8800;
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .team-section .all-team-btn:hover {
+            background-color: #e07e00;
+        }
+
+        /* Team Grid Styling */
+        .team-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            position: relative;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Container for image overlay */
+        .team_image-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team_image-container img {
+            width: 100%;
+            height: 301px;
+            transition: opacity 0.5s ease;
+        }
+
+        /* Overlay only on image */
+        .team_image-container::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 136, 0, 0.8); /* Semi-transparent orange */
+            transition: top 0.5s ease; /* Animate sliding from the top */
+        }
+
+        .team-member:hover .team_image-container::before {
+            top: 0; /* Slide the overlay down to cover the image */
+        }
+
+        .team-member h3 {
+            color: #ff8800;
+            margin: 15px 0 5px;
+            font-size: 1.5rem;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            margin: 10px 0 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            background-color: #ff8800; /* Orange background */
+            color: white; /* White icon color */
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px; /* Centering icon vertically */
+            transition: background-color 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: black; /* Black background on hover */
+        }  
+    
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -467,12 +614,12 @@ p.benifit-paragraph {
     }
 }
 .services_section {
-    padding-top: 190px;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 50px 0px;
 }
 .services_section_container {
     display: flex;
@@ -1983,6 +2130,123 @@ h2.heading_discription {
     justify-content: center;
     align-items: center;
 }
+  /* Container for the header image */
+  .header_image_container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+
+  /* Image */
+  .header_image1 img {
+    width: 100%;
+  }
+
+  /* Style for prev and next arrows */
+  .slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+    font-size: 2rem;
+    color: #fff;
+    border: 2px solid #ebe6e6;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    background-color: transparent;
+    border-radius: 6px;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+    line-height: 45px;
+    
+  }
+
+  /* Previous button style */
+  .slick-prev {
+    left: 50px;
+  }
+
+  /* Next button style */
+  .slick-next {
+    right: 50px;
+  }
+
+  /* Show buttons on hover */
+  .header_image_container:hover .slick-prev,
+  .header_image_container:hover .slick-next {
+    display: block;
+  }
+  .services-section {
+    color: white;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+  }
+
+  .services-section h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+
+  .services-section p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .services-section .phone-number {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .services-section .phone-number i {
+    font-size: 2rem;
+    margin-right: 15px;
+    color: #F8B400;
+  }
+
+  .services-section .buttons-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .services-section .btn {
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .services-section .btn-get-started {
+    background-color: #F8B400;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+
+  .services-section .btn-get-started:hover {
+    background-color: #dc9700;
+  }
+
+  .services-section .btn-contact-us {
+    background-color: transparent;
+    color: #F8B400;
+    border: 2px solid #F8B400;
+    transition: all 0.3s ease;
+  }
+
+  .services-section .btn-contact-us:hover {
+    background-color: #F8B400;
+    color: white;
+  }
+  .phone-number span {
+    color: white;
+}
+
+
  
 
 /*............................................Media queries.....................................*/
@@ -2180,10 +2444,63 @@ h2.heading_discription {
     }
     .top_header_slider {
         position: absolute;
-        top: 30px;
-        background-color: white;
-        left: 40px;
+        top: 0px;
+        left: 25px;
     }
+    .services-section {
+        color: white; 
+        padding: 10px;
+        text-align: left;
+        border-radius: 10px;
+    }
+    .phone-number span {
+        color: white;
+        font-size: 12px;
+    }
+    .services-section .phone-number {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .services-section p {
+        font-size: 10px;
+        /* margin-bottom: 10px; */
+    }
+    .services-section h1 {
+        font-size: 15px;
+        margin: 10px 0;
+        font-weight: bold;
+    }
+    .services-section p {
+        font-size: 10px;
+        /* margin-bottom: 10px; */
+    }
+    .services-section .phone-number i {
+        font-size: 15px;
+        margin-right: 11px;
+        color: #F8B400;
+    }
+    span {
+        font-weight: bold;
+        color: #0f2765;
+    }
+    .services-section .buttons-container {
+        display: flex;
+        gap: 10px;
+    }
+    .services-section .btn-get-started {
+        background-color: #F8B400;
+        color: white;
+        transition: background-color 0.3s ease;
+    }    
+    .services-section .btn {
+        padding: 5px 5px;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    
     .slider_heading {
         font-size: 15px;
         width: 270px;
@@ -3078,6 +3395,40 @@ p.blog_para {
     height: 80px;
     width: 80px;
 }
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .team-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .team-section p {
+        font-size: 1rem;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-section h2 {
+        font-size: 2rem;
+    }
+
+    .team-section p {
+        font-size: 0.9rem;
+    }
+
+    .all-team-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
 }
 @media(max-width: 1440px) and (min-width: 769px){
     .main-navbar {
