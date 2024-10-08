@@ -1,7 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
 }
 .container {
     padding-right: 15px;
@@ -13,6 +16,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.second_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 p.map {
     width: 7%;
@@ -111,9 +119,6 @@ ul.submenu {
  display: none;
 }
 
-.nav-list-ul ul li {
-    position: relative;
-}
 
 .nav-list-ul ul li a, .submenu-span-in {
     color: black;
@@ -138,8 +143,7 @@ ul.submenu {
     display: none;
     position: absolute;
     background-color: white;
-    top: 100%;
-    left: 0;
+    /* top: 100%; */
     width: 200px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -159,6 +163,12 @@ li.inline-block a.active {
 .inline-block:hover .submenu {
     display: block;
 }
+/* .inline-block:active .submenu {
+    display: block
+}
+a.submenu-span-in.active ul.submenu{
+    display: block;
+} */
 .request_btn {
     padding: 10px 10px;
     background-color: #f8b400;
@@ -248,7 +258,6 @@ li.inline-block a.active {
     font-size: 17px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: "Saira Condensed", sans-serif;
     font-weight: 700;
     padding: 14px 25px 12px;
     transition: 0.5s;
@@ -271,6 +280,11 @@ li.inline-block a.active {
 .benifit_image_container1 h4 {
     font-size: 20px;
     padding-top: 20px;
+    position: relative;
+    z-index: 2;
+    color: #333;
+    margin-top: 10px;
+    font-size: 1.2rem;
 }
 .benifit_image_container1 {
     background-color: white;
@@ -281,6 +295,46 @@ li.inline-block a.active {
     background: #ffffff;
     width: 260px;
     height: 130px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+/* .benifit_image_container1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+} */
+ /* Background image overlay */
+ .benifit_image_container1::before {
+    content: "";
+    position: absolute;
+    top: -100%; /* Start the overlay from above */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 136, 0, 0.7), rgba(255, 136, 0, 0.7)), 
+    url(../images_hvacwebpages/hvac_services6.jpg) no-repeat center center/cover;
+    transition: top 0.4s ease;
+    z-index: 1; /* Place it below the h4 but above the image */
+}
+
+/* Hover effects */
+.benifit_image_container1:hover::before {
+    top: 0; /* Slide the overlay down */
+}
+
+.benifit_image_container1:hover img {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+.benifit_image_container1 h4:hover {
+    color: white;
+}
+.sevice_list_box:hover{
+    margin-left: 10px;
+}
+.sevice_list_box{
+    transition: 0.7s;
 }
 .about_us_middle_container {
     padding-right: 15px;
@@ -393,7 +447,6 @@ p.benifit-paragraph {
     margin-bottom: 5px;
     font-weight: 400;
     line-height: 26px;
-    font-family: "Montserrat", sans-serif;
     color: #000;
     font-size: 20px;
 }
@@ -409,7 +462,6 @@ p.benifit-paragraph {
 .sevices_big_heading {
     color: #023e8a;
     line-height: 26px;
-    font-family: 'Outfit', sans-serif;
     font-weight: 600;
     font-size: 46px;
     line-height: 1.2;
@@ -417,6 +469,12 @@ p.benifit-paragraph {
 }
 .services_paragraph {
     width: 530px;
+    text-align: justify;
+    color: #666;
+    line-height: 26px;
+    margin: 0 0 15px;
+    text-transform: none;
+    font-weight: 400;
 }
 .services_images_container {
     display: flex;
@@ -590,20 +648,109 @@ p.benifit-paragraph {
 
         .social-icons a {
             display: inline-block;
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 37px;
             margin: 0 5px;
-            background-color: #ff8800; /* Orange background */
-            color: white; /* White icon color */
-            border-radius: 50%;
+            background-color: #ff8800;
+            color: white;
+            border-radius: 60%;
             text-align: center;
-            line-height: 30px; /* Centering icon vertically */
+            line-height: 30px;
             transition: background-color 0.3s;
         }
-
         .social-icons a:hover {
             background-color: black; /* Black background on hover */
-        }  
+        } 
+        .about_us_container {
+            display: flex;
+            margin: 0px 70px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            justify-content: space-between;
+        }
+        .about_us_outer_container {
+            background-color: #f9f9f9;
+        }
+        .about-text {
+            max-width: 50%;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .about-text span {
+            color: #ff8800;
+        }
+        .about-text p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .about-text h4 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .tool_container {
+            display: flex;
+        }
+        .about-text h4 i {
+            color: #ff8800;
+            margin-right: 10px;
+        }
+        .about-list {
+            margin-bottom: 20px;
+        }
+        .about-list ul {
+            list-style: none;
+        }
+        .about-list ul li {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .about-list ul li i {
+            color: #ff8800;
+            margin-right: 10px;
+        }
+        /* Button */
+        .about-text a {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #ff8800;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .about-text a:hover {
+            background-color: #e07e00;
+        }
+
+        /* Right side (image content) */
+        .about-image {
+            position: relative;
+            max-width: 45%;
+        }
+
+        .about-image img {
+    width: 100%;
+    border-radius: 10px;
+    height: 520px;
+}
+span.text-bold {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}       
     
 @keyframes scroll {
     0% {
@@ -625,10 +772,14 @@ p.benifit-paragraph {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    max-width: 1200px;
+    /* width: 80%; */
+    /* max-width: 1200px; */
     margin: 0 auto;
     position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 50px;
+    margin-left: 70px;
 }
 .info_services {
     flex: 1;
@@ -769,7 +920,6 @@ p.benifit-paragraph {
 }
 .reviews_content {
     width: 458px;
-    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
@@ -875,10 +1025,10 @@ p.benifit-paragraph {
     display: flex;
 }
 .solution_iamge img {
-    object-fit: cover;
     height: 200px;
     width: 100%;
     border-radius: 7px;
+    object-fit: contain;
 }
 .solution_heading {
     color: #232323;
@@ -935,7 +1085,6 @@ button.contact_btn a:hover {
     color: #0090cc;
     margin-bottom: 15px;
     line-height: 1.2;
-    font-family: "Montserrat", sans-serif;
     font-size: 24px;
 }
 .director_caption {
@@ -966,7 +1115,6 @@ button.r_m_btn {
     border-radius: 30px;
     line-height: 25px;
     text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     padding: 12px 40px;
     font-size: 12px;
@@ -978,7 +1126,7 @@ button.r_m_btn {
     background-color: #f3f6f8;
 }
 .offer_service_container{
-    background-image: url(../images_hvacwebpages/services_image.jpg);
+    background-image: url(../images_hvacwebpages/slider3.JPG);
     height: 500px;
     width: 100%;
     object-fit: cover;
@@ -1009,7 +1157,7 @@ button.r_m_btn {
 }
 .offer_box {
     display: flex;
-    padding: 60px;
+    padding: 30px;
 }
 .offer_box_container {
     position: absolute;
@@ -1023,7 +1171,7 @@ button.r_m_btn {
 .offer_box_container {
     position: absolute;
     top: 190px;
-    left: 110px;
+    left: 270px;
     background-color: white;
     border: 1px solid #d8dee1;
     max-width: 740px;
@@ -1036,7 +1184,7 @@ button.r_m_btn {
     font-size: 34px;
     position: absolute;
     top: 110px;
-    left: 100px;
+    left: 270px;
 }
 .faq-container {
     width: 90%;
@@ -1054,14 +1202,12 @@ button.r_m_btn {
     cursor: pointer;
     font-weight: bold;
     margin: 8px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
 .faq-answer {
     display: none;
     font-size: 20px;
     color: black;
-    font-family: 'Montserrat', sans-serif;
 }
 .h2-text-faq-case {
     color: #3a3c92;
@@ -1268,16 +1414,16 @@ h2.footer_cnt {
 
 .service_section {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
+    margin: 0px 70px;
 }
 .service_info-section {
-    margin-left: 120px;
-    margin-right: 70px;
-    padding: 40px;
+    /* margin-left: 120px; */
+    /* margin-right: 70px; */
+    padding: 20px;
 }
 h1.sevice_title {
     height: 20px;
-    font-family: sans-serif;
     color: #3a3c92;
     font-weight: bold;
     text-transform: uppercase;
@@ -1288,10 +1434,9 @@ h1.sevice_title {
 }
 h1.service_info-title {
     color: black;
-    font-family: sans-serif;
     text-transform: capitalize !important;
-    margin-bottom: 2rem;
-    margin-top: 30px;
+    margin-bottom: 1rem;
+    margin-top: 15px;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -1337,8 +1482,6 @@ h1.service_info-title {
 .third_service_paragraph {
     margin: 0 140px;
     font-size: 20px;
-    font-family: sans-serif;
-    font-family: sans-serif;
     text-align: justify;
     color: #666;
     line-height: 26px;
@@ -1356,7 +1499,6 @@ span {
 h1.happy_customer_title {
     text-align: center;
     color: white;
-    font-family: sans-serif;
     margin-bottom: 2rem;
     font-weight: 700;
     line-height: 1.3;
@@ -1522,10 +1664,10 @@ h1.feedback_client {
     padding: 40px;
 }
 .au_info-img2 {
-    padding: 40px;
+    padding: 20px;
     box-shadow: 0 0 11px #0f2765;
-    margin-left: 120px;
-    margin-right: 70px;
+    /* margin-left: 120px; */
+    /* margin-right: 70px; */
 }
 .au_info-img2 img {
     width: 570px;
@@ -2245,6 +2387,181 @@ h2.heading_discription {
   .phone-number span {
     color: white;
 }
+        /* Sidebar navigation */
+        .sidebar-container {
+            background-color: #f6f8f7;
+            border-right: 1px solid #eee;
+            border-radius: 9px;
+        }
+        .services-section_container {
+            display: flex;
+            margin: 50px 172px 0px;
+            align-content: space-between;
+        }
+
+        .sidebar {
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1rem;
+            padding: 12px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar ul li a:hover,
+        .sidebar ul li.active a {
+            background-color: #ff8800;
+            color: white;
+        }
+
+        /* Call to action section */
+        .call-to-action {
+            background-color: #fff;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .call-to-action img {
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .call-to-action p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .call-to-action a {
+            text-decoration: none;
+            color: white;
+            background-color: #ff8800;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .call-to-action a:hover {
+            background-color: #e07e00;
+        }
+
+        /* Right side content */
+        .content {
+            padding: 20px;
+        }
+
+        .content img {
+            width: 700px;
+            height: 600px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        .services-section {
+    width: 100%;
+}
+
+        /* New styles for heading and paragraph */
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #555;
+            text-align: justify;
+        }
+        span.text-bold {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+.call-to-action{
+    background-image: url(../images_hvacwebpages/calltoaction.jpg);
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size:100% 110%;
+}
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    width: 48%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    font-size: 20px;
+    color: #333;
+    /* margin-bottom: 10px; */
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+}
+.service_card_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    display: flex;
+}
+.icon-box {
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.icon-box i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.offer_content1 a {
+    text-decoration: none;
+    color: black;
+}
 
 
  
@@ -2377,9 +2694,20 @@ h2.heading_discription {
         color: #666;
         margin-bottom: 20px;
     }
-
-    .services_section {
-        padding-top: 290px;
+    .next {
+        right: -7px;
+        background-color: black;
+    }
+    .prev {
+        left: 5px;
+        background-color: black;
+    }
+    .team-section {
+        background: linear-gradient(to bottom, rgb(194 116 27), rgba(0, 0, 0, 0.7)), url(../images_hvacwebpages/valueproposition.jpg) no-repeat center center / cover;
+        padding: 20px 10px;
+        color: white;
+        text-align: center;
+        width: 100%;
     }
     .services_outer_container {
         width: 105%;
@@ -2390,8 +2718,6 @@ h2.heading_discription {
         justify-content: center;
         align-items: center;
         /* position: relative; */
-        position: absolute;
-        top: 420px;
     }
     .services_section_container {
         display: flex;
@@ -2635,7 +2961,8 @@ h2.heading_discription {
     .service_section {
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        /* padding: 10px; */
+        margin: 0px 20px;
     }
     .second_service_section {
         display: flex;
@@ -2991,12 +3318,34 @@ h2.heading_discription {
         height: 1055px;
         width: 104%;
     } 
+    .services-section_container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    .content img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        object-fit: cover;
+    }
+    .service_card_container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .service-card {
+        padding: 10px;
+        width: 100%;
+    }
+    .content {
+        padding: 10px;
+    }
+    
     
 }
 @media(max-width: 768px) and (min-width: 481px){
-    .header_image1 img {
-        width: 790px;
-    }
     .about_us_middle_container {
         padding-right: 0px;
         padding-left: 0px;
@@ -3005,6 +3354,14 @@ h2.heading_discription {
         padding-top: 0px;
         display: flex;
         flex-direction: column;
+    }
+    .nav-list-ul ul li a, .submenu-span-in {
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 5px;
+        display: block;
+        transition: background-color 0.3s ease;
     }
     .outer_services_comtainer {
         padding-left: 0px;
@@ -3036,7 +3393,6 @@ h2.heading_discription {
     .paragraph_container_inner_side {
         margin-right: 0px;
         border-radius: 2px;
-        padding: 10px;
         margin-bottom: 10px;
         width: 100%;
     }
@@ -3052,7 +3408,6 @@ h2.heading_discription {
         z-index: 100;
         position: sticky;
         box-shadow: 0 0 11px #ababab;
-        padding-right: 10px;
     }
     .paragraph_container_inner_side {
         margin-right: 0px;
@@ -3205,12 +3560,12 @@ h2.heading_discription {
     .reviews_outer_container {
         background-image: url(../images_hvacwebpages/reviews-mob.jpg);
         height: 1055px;
-        width: 104%;
+        width: 100%;
     } 
     .offer_service_container {
         background-image: url(../images_hvacwebpages/areas-mob.jpg);
         height: 1055px;
-        width: 104%;
+        width: 100%;
     }
     .offer_box_container {
         top: 260px;
@@ -3395,6 +3750,31 @@ p.blog_para {
     height: 80px;
     width: 80px;
 }
+.content img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+.services-section_container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+.service_card_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.service-card {
+    padding: 10px;
+    width: 100%;
+}
+.content {
+    padding: 10px;
+}
+
 }
 /* Media Queries */
 @media (max-width: 768px) {
@@ -3414,6 +3794,32 @@ p.blog_para {
     .team-member {
         width: 100%;
     }
+    .services-section_container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    .content img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        object-fit: cover;
+    }
+    .service_card_container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .service-card {
+        padding: 10px;
+        width: 100%;
+    }
+    .content {
+        padding: 10px;
+    }
+    
+   
 }
 
 @media (max-width: 480px) {
@@ -3429,6 +3835,10 @@ p.blog_para {
         padding: 10px 20px;
         font-size: 0.9rem;
     }
+    .content {
+        padding: 10px;
+    }
+    
 }
 @media(max-width: 1440px) and (min-width: 769px){
     .main-navbar {
@@ -3443,6 +3853,26 @@ p.blog_para {
         box-shadow: 0 0 11px #ababab;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .nav-list-ul ul li a, .submenu-span-in {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 6px 8px;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+    .top_header_slider {
+        position: absolute;
+        left: 145px;
+    }
+    .services-section {
+        padding: 10px;
+    }
+    .services-section h1 {
+        font-size: 2rem;
+        margin: 10px 0;
+        font-weight: bold;
     }
     .container {
         padding-right: 0px;
@@ -3732,6 +4162,31 @@ p.blog_para {
     .career_middle_container {
         margin-bottom: 10px;
     }  
+    .content img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        object-fit: cover;
+    }
+    .services-section_container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    .service_card_container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .service-card {
+        padding: 10px;
+        width: 100%;
+    }
+    .content {
+        padding: 10px;
+    }
+    
 }
 
 @media (min-width: 768px) {
@@ -3761,6 +4216,7 @@ p.blog_para {
     .menu-nav-list ul {
         display: none;
     }
+  
 }
 
 
